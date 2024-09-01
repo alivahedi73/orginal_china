@@ -962,17 +962,525 @@
             }
           ]
         },
-        { "id": 2, "name": "Tools & Hardware" },
-        { "id": 3, "name": "Bags, Cases & Boxes" },
-        { "id": 4, "name": "Furniture" },
-        { "id": 5, "name": "Metallurgy, Mineral & Energy" },
-        { "id": 6, "name": "Security & Protection" },
-        { "id": 7, "name": "Textile" },
-        { "id": 8, "name": "Instruments & Meters" },
-        { "id": 9, "name": "Office Supplies" },
-        { "id": 10, "name": "Agriculture & Food" },
-        { "id": 11, "name": "Toys" },
-        { "id": 12, "name": "Service" }
+        {
+          "id": 2,
+          "name": "Tools & Hardware",
+          "mainSubmenu": [
+            {
+              "id": 1,
+              "name": "Hand Tools",
+              "link": [
+                { "id": 1, "name": "Hand Tool Set" },
+                { "id": 2, "name": "Pliers" },
+                { "id": 3, "name": "Knife" },
+                { "id": 4, "name": "Electric Wrench" },
+                { "id": 5, "name": "Hammer" }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Power Tools",
+              "link": [
+                { "id": 1, "name": "Power Tool Accessories" },
+                { "id": 2, "name": "Electric Drill" },
+                { "id": 3, "name": "Electric Saw" },
+                { "id": 4, "name": "Electric Screwdriver" },
+                { "id": 5, "name": "Rotary Hammer" }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Hardware",
+              "link": [
+                { "id": 1, "name": "Hardware Accessories" },
+                { "id": 2, "name": "Home Hardware" },
+                { "id": 3, "name": "Machine Hardware" },
+                { "id": 4, "name": "Brackets" },
+                { "id": 5, "name": "Building Hardware" }
+              ]
+            },
+            {
+              "id": 4,
+              "name": "Diamond Tools",
+              "link": [
+                { "id": 1, "name": "Diamond Saw Blade" },
+                { "id": 2, "name": "Diamond Grinding Wheel" },
+                { "id": 3, "name": "Diamond Drilling Tools" },
+                { "id": 4, "name": "Diamond Cutter" },
+                { "id": 5, "name": "Diamond Wire Saw" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Bags, Cases & Boxes",
+          "mainSubmenu": [
+            {
+              "id": 1,
+              "name": "Fashion Bags",
+              "link": [
+                { "id": 1, "name": "Handbags" },
+                { "id": 2, "name": "Tote Bag" },
+                { "id": 3, "name": "Non-woven Shopping Bag" },
+                { "id": 4, "name": "Wallet & Purses" },
+                { "id": 5, "name": "Bucket Bag" }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Sports & Casual Bags",
+              "link": [
+                { "id": 1, "name": "Backpack" },
+                { "id": 2, "name": "Non Woven Bag" },
+                { "id": 3, "name": "Waist Bag" },
+                { "id": 4, "name": "Travel Bag" },
+                { "id": 5, "name": "Leisure Bag" }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Specialized Bags & Cases",
+              "link": [
+                { "id": 1, "name": "Gift Box & Bag" },
+                { "id": 2, "name": "Paper Gift Box" },
+                { "id": 3, "name": "Mobile Phone Case" },
+                { "id": 4, "name": "Trolley & Luggage" },
+                { "id": 5, "name": "Cooler Bag & Box" },
+                { "id": 6, "name": "Cosmetic Bag & Case" },
+                { "id": 7, "name": "Laptop Bag" },
+                { "id": 8, "name": "School Bags" },
+                { "id": 9, "name": "Promotional Bag" },
+                { "id": 10, "name": "Tool Bag" },
+                { "id": 11, "name": "Garment Bag" },
+                { "id": 12, "name": "Instrument Bag & Case" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Furniture",
+          "mainSubmenu": [
+            {
+              "id": 1,
+              "name": "Furniture by Use",
+              "link": [
+                { "id": 1, "name": "Office Furniture" },
+                { "id": 2, "name": "Outdoor Furniture" },
+                { "id": 3, "name": "Living Room Furniture" },
+                { "id": 4, "name": "Dining Room Furniture" },
+                { "id": 5, "name": "Hospital Furniture" },
+                { "id": 6, "name": "Bedroom Furniture" },
+                { "id": 7, "name": "Kitchen Furniture" },
+                { "id": 8, "name": "Store & Supermarket Furniture" },
+                { "id": 9, "name": "Bathroom Furniture" },
+                { "id": 10, "name": "Public Furniture" },
+                { "id": 11, "name": "Restaurant Furniture" },
+                { "id": 12, "name": "Salon Furniture" }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Chairs & Tables",
+              "link": [
+                { "id": 1, "name": "Dining Chairs" },
+                { "id": 2, "name": "Office Chair" },
+                { "id": 3, "name": "Office Desk" },
+                { "id": 4, "name": "Dining Table" },
+                { "id": 5, "name": "Auditorium Chairs " }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Cabinets & Beds",
+              "link": [
+                { "id": 1, "name": "Kitchen Cabinets" },
+                { "id": 2, "name": "Hospital Bed" },
+                { "id": 3, "name": "Bathroom Cabinets" },
+                { "id": 4, "name": "Filing Cabinets" },
+                { "id": 5, "name": "Bedroom Bed" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Metallurgy, Mineral & Energy",
+          "mainSubmenu": [
+            {
+              "id": 1,
+              "name": "Solar & Renewable Energy",
+              "link": [
+                { "id": 1, "name": "Solar Panels" },
+                { "id": 2, "name": "Solar Energy System" },
+                { "id": 3, "name": "Solar Inverter" },
+                { "id": 4, "name": "Solar Water Heater" },
+                { "id": 5, "name": "Solar Collector" }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Nonmetallic Products",
+              "link": [
+                { "id": 1, "name": "Magnetic Material" },
+                { "id": 2, "name": "Graphite & Products" },
+                { "id": 3, "name": "Nonmetallic Minerals" },
+                { "id": 4, "name": "Rare Earth & Products" },
+                { "id": 5, "name": "Petroleum & Products" }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Metal & Products",
+              "link": [
+                { "id": 1, "name": "Steel & Products" },
+                { "id": 2, "name": "Steel Pipe & Tube" },
+                { "id": 3, "name": "Steel Coil & Strip" },
+                { "id": 4, "name": "Steel Sheet & Plate" },
+                { "id": 5, "name": "Stainless Steel" },
+                { "id": 6, "name": "Aluminum" },
+                { "id": 7, "name": "Non-ferrous Metal & Products" },
+                { "id": 8, "name": "Copper" },
+                { "id": 9, "name": "Alloy" },
+                { "id": 10, "name": "Tungsten" },
+                { "id": 11, "name": "Titanium" },
+                { "id": 12, "name": "Black Metal & Products" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Security & Protection",
+          "mainSubmenu": [
+            {
+              "id": 1,
+              "name": "Surveillance & Access Control",
+              "link": [
+                { "id": 1, "name": "CCTV Camera" },
+                { "id": 2, "name": "Access Control System" },
+                { "id": 3, "name": "Video Door Phone" },
+                { "id": 4, "name": "DVR" },
+                { "id": 5, "name": "Time & Attendance" }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Roadway Safety",
+              "link": [
+                { "id": 1, "name": "Traffic Barrier" },
+                { "id": 2, "name": "Reflective Material" },
+                { "id": 3, "name": "Probe, Sensor" },
+                { "id": 4, "name": "Traffic Light" },
+                { "id": 5, "name": "Road Stud" }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Alarm & Fire Fighting",
+              "link": [
+                { "id": 1, "name": "Alarm & Security Systems" },
+                { "id": 2, "name": "Fire Hose" },
+                { "id": 3, "name": "Fire Alarm & Smoke Detector" },
+                { "id": 4, "name": "Alarm & Security System Accessories" },
+                { "id": 5, "name": "Fire Sprinkler" }
+              ]
+            },
+            {
+              "id": 4,
+              "name": "Workplace Safety Supplies",
+              "link": [
+                { "id": 1, "name": "Protective Face Mask" },
+                { "id": 2, "name": "Anti-Static" },
+                { "id": 3, "name": "Lifesaving" },
+                { "id": 4, "name": "EAS & Accessories" },
+                { "id": 5, "name": "Security Guard" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Textile",
+          "mainSubmenu": [
+            {
+              "id": 1,
+              "name": "Fabric & Fiber",
+              "link": [
+                { "id": 1, "name": "Non Woven Fabric" },
+                { "id": 2, "name": "Industrial Textile" },
+                { "id": 3, "name": "Synthetic Leather" },
+                { "id": 4, "name": "Functional Textile" },
+                { "id": 5, "name": "Knitting & Crocheting Fabric" },
+                { "id": 6, "name": "Other Synthetic Fibers" },
+                { "id": 7, "name": "Nylon Fabric" },
+                { "id": 8, "name": "Silk" },
+                { "id": 9, "name": "Traffic Light" },
+                { "id": 10, "name": "Embroidery & Drawnwork" },
+                { "id": 11, "name": "Linen & Flax Fabric" },
+                { "id": 12, "name": "Polyester Fabric" },
+                { "id": 13, "name": "Man-made Fiber" }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Home Textile",
+              "link": [
+                { "id": 1, "name": "Carpet, Rug & Mat" },
+                { "id": 2, "name": "Towel & Handkerchief" },
+                { "id": 3, "name": "Curtains & Drapes" },
+                { "id": 4, "name": "Table Cloth" },
+                { "id": 5, "name": "Decorative Cloth" }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Textile Accessories",
+              "link": [
+                { "id": 1, "name": "Yarn" },
+                { "id": 2, "name": "Twine, Rope & Netting" },
+                { "id": 3, "name": "Lace & Purfle" },
+                { "id": 4, "name": "Sack & Bag for Packing" },
+                { "id": 5, "name": "Sewing Thread" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Instruments & Meters",
+          "mainSubmenu": [
+            {
+              "id": 1,
+              "name": "Test & Analysis Instruments",
+              "link": [
+                { "id": 1, "name": "Test Instrument" },
+                { "id": 2, "name": "Test Machine" },
+                { "id": 3, "name": "Analysis Instrument" },
+                { "id": 4, "name": "Detector" },
+                { "id": 5, "name": "Gas Analyzer" }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Optical & Lab Instruments",
+              "link": [
+                { "id": 1, "name": "Laboratory Instruments" },
+                { "id": 2, "name": "Lab Utensil and Disposable" },
+                { "id": 3, "name": "Optical Lens" },
+                { "id": 4, "name": "Microscope" },
+                { "id": 5, "name": "Telescope & Binoculars" }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Measuring Instruments",
+              "link": [
+                { "id": 1, "name": "Meter for Liquid & Gas" },
+                { "id": 2, "name": "Weighing & Measuring Apparatus" },
+                { "id": 3, "name": "Pressure Gauge" },
+                { "id": 4, "name": "Meter for Electricity" },
+                { "id": 5, "name": "Geographic Surveying Instrument" },
+                { "id": 6, "name": "Measuring Device" },
+                { "id": 7, "name": "Electronic Scale" },
+                { "id": 8, "name": "Physical Measuring Meter" },
+                { "id": 9, "name": "Water Meter" },
+                { "id": 10, "name": "Thermometer & Hygrometer" },
+                { "id": 11, "name": "Energy Meter & Power Meter" },
+                { "id": 12, "name": "Multimeter" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Office Supplies",
+          "mainSubmenu": [
+            {
+              "id": 1,
+              "name": "Stationery",
+              "link": [
+                { "id": 1, "name": "Pen, Pencil & Brush" },
+                { "id": 2, "name": "Notebook" },
+                { "id": 3, "name": "Drawing & Paint" },
+                { "id": 4, "name": "File Folder" },
+                { "id": 5, "name": "Pencil Bags & Cases" }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Office Consumables",
+              "link": [
+                { "id": 1, "name": "Drum & Toner Cartridge" },
+                { "id": 2, "name": "Office Adhesive Tape" },
+                { "id": 3, "name": "Office Paper" },
+                { "id": 4, "name": "Ink Cartridge" },
+                { "id": 5, "name": "Memo & Note Pad" }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Office Equipments",
+              "link": [
+                { "id": 1, "name": "Demonstrational & Teaching Utensil" },
+                { "id": 2, "name": "Whiteboard" },
+                { "id": 3, "name": "Thermal Printer" },
+                { "id": 4, "name": "Projectors" },
+                { "id": 5, "name": "Conferencing System" },
+                { "id": 6, "name": "Copier & Copier Supplies" },
+                { "id": 7, "name": "Desktop 3D Printer" },
+                { "id": 8, "name": "Binding Machine" },
+                { "id": 9, "name": "Projection Screen" },
+                { "id": 10, "name": "Scanner" },
+                { "id": 11, "name": "Calculator" },
+                { "id": 12, "name": "Paper Shredder" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Agriculture & Food",
+          "mainSubmenu": [
+            {
+              "id": 1,
+              "name": "Vegetables & Fruits",
+              "link": [
+                { "id": 1, "name": "Nut & Seed" },
+                { "id": 2, "name": "Tea & Tea Leaf" },
+                { "id": 3, "name": "Garlic" },
+                { "id": 4, "name": "Dried Fruit" },
+                { "id": 5, "name": "Fruit & Melon" },
+                { "id": 6, "name": "Chilli & Pepper" },
+                { "id": 7, "name": "Edible Fungus & Algae" },
+                { "id": 8, "name": "Ginger" },
+                { "id": 9, "name": "Bean & Preparation" },
+                { "id": 10, "name": "Onion" },
+                { "id": 11, "name": "Carrot & Radish" },
+                { "id": 12, "name": "Potato" }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Food & Beverage",
+              "link": [
+                { "id": 1, "name": "Canned Food" },
+                { "id": 2, "name": "Frozen Food" },
+                { "id": 3, "name": "Beverage" },
+                { "id": 4, "name": "Alcoholic Beverage" },
+                { "id": 5, "name": "Sugar & Confection" }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Additives & Extracts",
+              "link": [
+                { "id": 1, "name": "Food Additive" },
+                { "id": 2, "name": "Herbal Extract" },
+                { "id": 3, "name": "Agriculture Manure" },
+                { "id": 4, "name": "Feed Additives" },
+                { "id": 5, "name": "Fruit Extract" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "name": "Toys",
+          "mainSubmenu": [
+            {
+              "id": 1,
+              "name": "Inflatable",
+              "link": [
+                { "id": 1, "name": "Inflatable Toys" },
+                { "id": 2, "name": "Inflatable Bouncer" },
+                { "id": 3, "name": "Inflatable Slide" },
+                { "id": 4, "name": "Inflatable Castle" },
+                { "id": 5, "name": "Inflatable Cartoon" }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Toys for Sports & Recreation",
+              "link": [
+                { "id": 1, "name": "Kids Driving Toys" },
+                { "id": 2, "name": "Vehicle Toys" },
+                { "id": 3, "name": "Novelty Toys" },
+                { "id": 4, "name": "Sports & Fitness" },
+                { "id": 5, "name": "Sword & Gun Toys" }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Toys of Material",
+              "link": [
+                { "id": 1, "name": "Plush & Stuffed Toy" },
+                { "id": 2, "name": "Plastic Toys" },
+                { "id": 3, "name": "Remote Control Toys" },
+                { "id": 4, "name": "Wooden Toys" },
+                { "id": 5, "name": "Electrical Toys" }
+              ]
+            },
+            {
+              "id": 4,
+              "name": "Toys of Special Use",
+              "link": [
+                { "id": 1, "name": "Intellectual & Educational Toys" },
+                { "id": 2, "name": "Pet Toys" },
+                { "id": 3, "name": "Baby Toys" },
+                { "id": 4, "name": "Model & Miniature Toys" },
+                { "id": 5, "name": "Doll & Puppet" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Service",
+          "mainSubmenu": [
+            {
+              "id": 1,
+              "name": "Shipment & Storage",
+              "link": [
+                { "id": 1, "name": "Shipment & Storage" },
+                { "id": 2, "name": "Sea Freight" },
+                { "id": 3, "name": "Freight Agents" },
+                { "id": 4, "name": "Air Freight" },
+                { "id": 5, "name": "Express Delivery" },
+                { "id": 6, "name": "Railway Freight" },
+                { "id": 7, "name": "Road Freight" },
+                { "id": 8, "name": "Combined Transport" },
+                { "id": 9, "name": "Warehouse Services" },
+                { "id": 10, "name": "Customs Clearance Services" }
+              ]
+            },
+            {
+              "id": 2,
+              "name": "Commercial Service",
+              "link": [
+                {
+                  "id": 1,
+                  "name": "Certification & InspectionReal Estate & Property"
+                },
+                { "id": 2, "name": "Advertising" },
+                { "id": 3, "name": "Consultation" },
+                { "id": 4, "name": "Company Registration" }
+              ]
+            },
+            {
+              "id": 3,
+              "name": "Other Services",
+              "link": [
+                { "id": 1, "name": "Exhibition" },
+                { "id": 2, "name": "Sales & Agency" },
+                { "id": 3, "name": "Restaurant" },
+                { "id": 4, "name": "Education & Training" },
+                { "id": 5, "name": "Employment & Labor" }
+              ]
+            }
+          ]
+        }
       ]
     }
   ],
@@ -1077,6 +1585,48 @@
       "psecond": "",
       "icon": "<LuMoveRight />",
       "alt": "this is test!"
+    }
+  ],
+  "menuSlider": [
+    {
+      "id": 1,
+      "name": "num1",
+      "src": "../../../public/assets/Images/sl_1/s1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "num1",
+      "src": "../../../public/assets/Images/sl_1/s1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "num1",
+      "src": "../../../public/assets/Images/sl_1/s1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "num1",
+      "src": "../../../public/assets/Images/sl_1/s1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "num1",
+      "src": "../../../public/assets/Images/sl_1/s1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "num1",
+      "src": "../../../public/assets/Images/sl_1/s1.jpg"
+    },
+    {
+      "id": 7,
+      "name": "num1",
+      "src": "../../../public/assets/Images/sl_1/s1.jpg"
+    },
+    {
+      "id": 8,
+      "name": "num1",
+      "src": "../../../public/assets/Images/sl_1/s1.jpg"
     }
   ]
 }

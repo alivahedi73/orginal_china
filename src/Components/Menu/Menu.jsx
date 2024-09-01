@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./Menu.scss";
 import { FaCaretRight } from "react-icons/fa";
 import Submenu from "../Submenu/Submenu";
+import MoreCategorize from "../MoreCategorize/MoreCategorize";
 const Menu = () => {
   let [menu, setMenu] = useState([]);
   let fetchMenu = async () => {
@@ -36,14 +37,14 @@ const Menu = () => {
                   {/* end of submenu */}
                 </div>
               ) : (
-                <a href="#" className="sub_2" key={item.id}>
-                  <span>{item.name}</span>
-                  {/* start of submenu */}
-                  <div className="main_sub">
-                    <div className="msMenu_1"></div>
+                <div key={item.id}>
+                  <a href="#" className="sub_2" key={item.id}>
+                    <span>{item.name}</span>
+                  </a>
+                  <div className="cat_sub">
+                    <MoreCategorize value={item.mainDiv} />
                   </div>
-                  {/* end of submenu */}
-                </a>
+                </div>
               )}
             </div>
           );
