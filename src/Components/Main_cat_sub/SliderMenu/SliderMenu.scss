@@ -1,0 +1,159 @@
+.mslider_cat {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    overflow: hidden;
+    .imgBox {
+      width: 100%;
+      height: 100%;
+      .benner_img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        object-fit: cover;
+        opacity: 0;
+        transition: all 300ms linear;
+        -webkit-transition: all 300ms linear;
+        -moz-transition: all 300ms linear;
+        -ms-transition: all 300ms linear;
+        -o-transition: all 300ms linear;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .classbanner{
+          width:30%;
+          height: 90%;
+          display: block;
+          text-decoration: none;
+          img{
+            width: 60%;
+            height: 60%;
+            object-fit: cover;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+            margin-top: 5px;
+            margin-bottom: 10px;
+}
+          p{
+            color: #1b1b1b;
+            display: block;
+            text-align: center;
+            font-size: 16px;
+          }
+        }
+      }
+      .active {
+        opacity: 1;
+      }
+      .none {
+        opacity: 0;
+      }
+    }
+    .control {
+      list-style: none;
+      cursor: pointer;
+      .n1 {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        width: 30px;
+        height: 45px;
+        font-size: 15px;
+        background-color: #2b2b2b9f;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 300ms;
+        transition-property: all;
+        transition-timing-function: linear;
+        &:hover {
+          background-color: deeppink;
+          color: #3b3b3b;
+        }
+      }
+      .n2 {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        width: 30px;
+        height: 45px;
+        font-size: 15px;
+        background-color: #2b2b2b9f;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 300ms;
+        transition-property: all;
+        transition-timing-function: linear;
+        &:hover {
+          background-color: deeppink;
+          color: #3b3b3b;
+        }
+      }
+    }
+    .paggnation {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      width: 60px;
+      height: 35px;
+      background-color: #3b3b3b18;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      .m1 {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border: 2px solid black;
+        transition: all 300ms linear;
+        -webkit-transition: all 300ms linear;
+        -moz-transition: all 300ms linear;
+        -ms-transition: all 300ms linear;
+        -o-transition: all 300ms linear;
+        background-color: whitesmoke;
+      }
+      .activebulet {
+        background-color: darkred;
+      }
+      .nonebulet {
+        background-color: whitesmoke;
+      }
+    }
+  }
+}

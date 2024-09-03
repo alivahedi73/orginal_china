@@ -1,0 +1,243 @@
+@keyframes animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@mixin responsive($breakpoint) {
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+  @if $breakpoint == smartphone-portrait {
+    @media only screen and (max-width: 575.98px) {
+      @content;
+    }
+  }
+  @if $breakpoint == smartphone-landscape {
+    @media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
+      @content;
+    }
+  }
+  @if $breakpoint == laptop {
+    @media only screen and (min-width: 1199.98px) and (max-width: 1399.98px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 1399.99px) {
+      @content;
+    }
+  }
+}
+.sl_2 {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  .s_1 {
+    display: block;
+    width: 200px;
+    height: 123px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: #5b5b5b29;
+    text-decoration: none;
+    transition: 500ms linear;
+    @include responsive(smartphone-landscape) {
+      width: 150px;
+      height: 80px;
+    }
+    @include responsive(smartphone-portrait) {
+      width: 120px;
+      height: 50px;
+    }
+    &:hover {
+      background-color: #3b3b3b61;
+      img {
+        transform: translateY(152px);
+        transition: 300ms linear;
+      }
+      .s_1_P {
+        opacity: 0;
+        transition: 100ms linear;
+      }
+      .sp1_hover {
+        transition: 500ms linear;
+        transform: translateX(0);
+      }
+      .s_hover {
+        opacity: 1;
+        transition: 800ms linear;
+        animation-name: animation;
+        animation-timing-function: linear;
+        animation-duration: 800ms;
+        animation-iteration-count: infinite;
+      }
+    }
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 150px;
+      height: 86px;
+      object-fit: contain;
+      transition: linear 300ms;
+      @include responsive(smartphone-landscape) {
+        width: 100px;
+        height: 50px;
+        right: 0;
+      }
+      @include responsive(smartphone-portrait) {
+        width: 65px;
+        height: 35px;
+      }
+    }
+    .s_1_P {
+      font-size: 15px;
+      font-weight: 700;
+      position: absolute;
+      top: 15%;
+      left: 10%;
+      transition: 900ms linear;
+      text-decoration: none;
+      color: #3b3b3b;
+      @include responsive(smartphone-landscape) {
+        font-size: 12px;
+      }
+      @include responsive(smartphone-portrait) {
+        font-size: 10px;
+      }
+    }
+    .sp1_hover {
+      position: absolute;
+      top: 15%;
+      left: 10%;
+      font-size: 15px;
+      font-weight: 500;
+      color: #2b2b2b;
+      transform: translateX(-250px);
+      transition: 500ms linear;
+      @include responsive(smartphone-landscape) {
+        top: 10%;
+        left: 10%;
+        font-size: 10px;
+      }
+      @include responsive(smartphone-portrait) {
+        top: 5%;
+        left: 5%;
+        font-size: 8px;
+      }
+    }
+    .s_hover {
+      position: absolute;
+      bottom: 0%;
+      left: 10%;
+      font-size: 30px;
+      color: #3b3b3b;
+      opacity: 0;
+      transition: 800ms linear;
+      @include responsive(smartphone-landscape) {
+        bottom: 0%;
+        left: 5%;
+        font-size: 10px;
+      }
+      @include responsive(smartphone-portrait) {
+        bottom: 0%;
+        left: 0%;
+        font-size: 8px;
+      }
+    }
+  }
+  .s_2 {
+    width: 130px;
+    height: 122px;
+    background-color: blue;
+    border-radius: 10px;
+    background-color: #5b5b5b29;
+    transition: 300ms linear;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: black;
+    @include responsive(smartphone-landscape) {
+      width: 100px;
+      height: 80px;
+    }
+    @include responsive(smartphone-portrait) {
+      width: 80px;
+      height: 50px;
+    }
+    .s2P {
+      font-size: 14px;
+      font-weight: 600;
+      color: black;
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      text-decoration: none;
+       @include responsive(smartphone-landscape) {
+        font-size: 10px;
+      }
+      @include responsive(smartphone-portrait) {
+        font-size: 8px;
+      }
+    }
+    .s2Img {
+      width: 80%;
+      height: 60%;
+      object-fit: contain;
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
+
+    .sp_hover {
+      position: absolute;
+      bottom: 0px;
+      left: 15px;
+      font-size: 50px;
+      font-weight: 700;
+      opacity: 0;
+      transition: 300ms linear;
+       @include responsive(smartphone-landscape) {
+        bottom: 0%;
+        left: 0%;
+        font-size: 10px;
+      }
+      @include responsive(smartphone-portrait) {
+        bottom: 5%;
+        left: 1%;
+        font-size: 8px;
+      }
+    }
+    &:hover {
+      background-color: #3b3b3b61;
+      .sp_hover {
+        opacity: 1;
+        transition: 800ms linear;
+        animation-name: animation;
+        animation-timing-function: linear;
+        animation-duration: 800ms;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+}

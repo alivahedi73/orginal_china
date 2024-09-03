@@ -1,0 +1,339 @@
+@keyframes animation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.sl_2 {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.sl_2 .s_1 {
+  display: block;
+  width: 200px;
+  height: 123px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(91, 91, 91, 0.1607843137);
+  text-decoration: none;
+  transition: 500ms linear;
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+  .sl_2 .s_1 {
+    width: 150px;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .sl_2 .s_1 {
+    width: 120px;
+    height: 50px;
+  }
+}
+.sl_2 .s_1:hover {
+  background-color: rgba(59, 59, 59, 0.3803921569);
+}
+.sl_2 .s_1:hover img {
+  transform: translateY(152px);
+  transition: 300ms linear;
+}
+.sl_2 .s_1:hover .s_1_P {
+  opacity: 0;
+  transition: 100ms linear;
+}
+.sl_2 .s_1:hover .sp1_hover {
+  transition: 500ms linear;
+  transform: translateX(0);
+}
+.sl_2 .s_1:hover .s_hover {
+  opacity: 1;
+  transition: 800ms linear;
+  animation-name: animation;
+  animation-timing-function: linear;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+}
+.sl_2 .s_1 img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 86px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: linear 300ms;
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+  .sl_2 .s_1 img {
+    width: 100px;
+    height: 50px;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .sl_2 .s_1 img {
+    width: 65px;
+    height: 35px;
+  }
+}
+.sl_2 .s_1 .s_1_P {
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  transition: 900ms linear;
+  text-decoration: none;
+  color: #3b3b3b;
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+  .sl_2 .s_1 .s_1_P {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .sl_2 .s_1 .s_1_P {
+    font-size: 10px;
+  }
+}
+.sl_2 .s_1 .sp1_hover {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2b2b2b;
+  transform: translateX(-250px);
+  transition: 500ms linear;
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+  .sl_2 .s_1 .sp1_hover {
+    top: 10%;
+    left: 10%;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .sl_2 .s_1 .sp1_hover {
+    top: 5%;
+    left: 5%;
+    font-size: 8px;
+  }
+}
+.sl_2 .s_1 .s_hover {
+  position: absolute;
+  bottom: 0%;
+  left: 10%;
+  font-size: 30px;
+  color: #3b3b3b;
+  opacity: 0;
+  transition: 800ms linear;
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+  .sl_2 .s_1 .s_hover {
+    bottom: 0%;
+    left: 5%;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .sl_2 .s_1 .s_hover {
+    bottom: 0%;
+    left: 0%;
+    font-size: 8px;
+  }
+}
+.sl_2 .s_2 {
+  width: 130px;
+  height: 122px;
+  background-color: blue;
+  border-radius: 10px;
+  background-color: rgba(91, 91, 91, 0.1607843137);
+  transition: 300ms linear;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: black;
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+  .sl_2 .s_2 {
+    width: 100px;
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .sl_2 .s_2 {
+    width: 80px;
+    height: 50px;
+  }
+}
+.sl_2 .s_2 .s2P {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  text-decoration: none;
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+  .sl_2 .s_2 .s2P {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .sl_2 .s_2 .s2P {
+    font-size: 8px;
+  }
+}
+.sl_2 .s_2 .s2Img {
+  width: 80%;
+  height: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.sl_2 .s_2 .sp_hover {
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  font-size: 50px;
+  font-weight: 700;
+  opacity: 0;
+  transition: 300ms linear;
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 575.99px) and (max-width: 767.98px) {
+  .sl_2 .s_2 .sp_hover {
+    bottom: 0%;
+    left: 0%;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .sl_2 .s_2 .sp_hover {
+    bottom: 5%;
+    left: 1%;
+    font-size: 8px;
+  }
+}
+.sl_2 .s_2:hover {
+  background-color: rgba(59, 59, 59, 0.3803921569);
+}
+.sl_2 .s_2:hover .sp_hover {
+  opacity: 1;
+  transition: 800ms linear;
+  animation-name: animation;
+  animation-timing-function: linear;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+}/*# sourceMappingURL=FlexBoxSlider.css.map */

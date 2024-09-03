@@ -27,7 +27,7 @@ const FlexBoxSlider = () => {
                   <p className="s_1_P">{item.pfirst}</p>
                   <p className="sp1_hover">{item.psecond}</p>
                   <p className="s_hover">
-                    <LuMoveRight style={{ fontSize: "25px" }} />
+                    <LuMoveRight />
                   </p>
                 </a>
               ) : (
@@ -35,7 +35,7 @@ const FlexBoxSlider = () => {
                   <img src={item.src} className="s2Img" alt={item.alt} />
                   <p className="s2P">{item.pfirst}</p>
                   <div className="sp_hover">
-                    <LuMoveRight style={{ fontSize: "25px" }} />
+                    <LuMoveRight />
                   </div>
                 </a>
               )}

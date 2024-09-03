@@ -1,0 +1,28 @@
+.menu_cat {
+  height: 100%;
+}
+.menu_cat .ti_cat {
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+.menu_cat .ti_cat .pCat {
+  font-size: 25px;
+  color: #5b5b5b;
+  margin-bottom: 2px;
+}
+.menu_cat .ti_cat .linkCat {
+  font-size: 20px;
+  transition: all;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+}
+.menu_cat .ti_cat .linkCat:hover {
+  color: red;
+}
+.menu_cat .Menu__catmain {
+  margin-bottom: 2px;
+}/*# sourceMappingURL=Left.css.map */

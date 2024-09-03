@@ -1,0 +1,107 @@
+@media only screen and (min-width: 0) {
+  @for $i from 0 through 12 {
+    .col-xs-#{$i} {
+      width: 8.3333333333% * $i;
+      @if ($i==0) {
+        display: none;
+      } @else {
+        display: block;
+      }
+    }
+    @for $i from 0 through 12 {
+      .offset-xs-#{$i} {
+        margin-left: 8.3333333333% * $i;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 576px) {
+  @for $i from 0 through 12 {
+    .col-sm-#{$i} {
+      width: 8.3333333333% * $i;
+      @if ($i==0) {
+        display: none;
+      } @else {
+        display: block;
+      }
+    }
+  }
+  @for $i from 0 through 12 {
+    .offset-sm-#{$i} {
+      margin-left: 8.3333333333% * $i;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  @for $i from 0 through 12 {
+    .col-md-#{$i} {
+      width: 8.3333333333% * $i;
+      @if ($i==0) {
+        display: none;
+      } @else {
+        display: block;
+      }
+    }
+  }
+  @for $i from 0 through 12 {
+    .offset-md-#{$i} {
+      margin-left: 8.3333333333% * $i;
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  @for $i from 0 through 12 {
+    .col-lg-#{$i} {
+      width: 8.3333333333% * $i;
+      @if ($i==0) {
+        display: none;
+      } @else {
+        display: block;
+      }
+    }
+  }
+  @for $i from 0 through 12 {
+    .offset-lg-#{$i} {
+      margin-left: 8.3333333333% * $i;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  @for $i from 0 through 12 {
+    .col-xl-#{$i} {
+      width: 8.3333333333% * $i;
+      @if ($i==0) {
+        display: none;
+      } @else {
+        display: block;
+      }
+    }
+  }
+  @for $i from 0 through 12 {
+    .offset-xl-#{$i} {
+      margin-left: 8.3333333333% * $i;
+    }
+  }
+}
+@media only screen and (min-width: 1400px) {
+  @for $i from 0 through 12 {
+    .col-xxl-#{$i} {
+      width: 8.3333333333% * $i;
+      @if ($i==0) {
+        display: none;
+      } @else {
+        display: block;
+      }
+    }
+  }
+  @for $i from 0 through 12 {
+    .offset-xxl-#{$i} {
+      margin-left: 8.3333333333% * $i;
+    }
+  }
+}
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+}
