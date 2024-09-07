@@ -1,8 +1,11 @@
-import Responsive from "./Components/Responsive/Responsive";
-
+import MainApp from "./Components/MainApp/MainApp";
 
 const App = () => {
-    return ( <><Responsive /></> );
-}
- 
+  return (
+    <>
+      <MainApp />
+    </>
+  );
+};
+
 export default App;
