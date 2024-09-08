@@ -41,6 +41,7 @@ const Slider = () => {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
+        id="sl_1"
       >
         {sl.map((item, index) => {
           return (

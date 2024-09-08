@@ -1590,43 +1590,35 @@
   "menuSlider": [
     {
       "id": 1,
-      "name": "num1",
-      "src": "../../../public/assets/Images/sl_1/s1.jpg"
+      "name": "Halloween-Supplies",
+      "src": "../../../../../public/assets/Images/slider_menu/Halloween-Supplies.jpg"
     },
     {
       "id": 2,
-      "name": "num1",
-      "src": "../../../public/assets/Images/sl_1/s1.jpg"
+      "name": "Halloween-Supplies",
+      "src": "../../../../../public/assets/Images/slider_menu/Halloween-Supplies.jpg"
     },
     {
       "id": 3,
-      "name": "num1",
-      "src": "../../../public/assets/Images/sl_1/s1.jpg"
+      "name": "Halloween-Supplies",
+      "src": "../../../../../public/assets/Images/slider_menu/Halloween-Supplies.jpg"
     },
     {
       "id": 4,
-      "name": "num1",
-      "src": "../../../public/assets/Images/sl_1/s1.jpg"
-    },
+      "name": "Halloween-Supplies",
+      "src": "../../../../../public/assets/Images/slider_menu/Halloween-Supplies.jpg"
+    }
+  ],
+  "hot_product": [
     {
-      "id": 5,
-      "name": "num1",
-      "src": "../../../public/assets/Images/sl_1/s1.jpg"
+      "id": 1,
+      "name": "UPS"
     },
+    { "id": 2, "name": "Plug" },
+    { "id": 3, "name": "Look" },
     {
-      "id": 6,
-      "name": "num1",
-      "src": "../../../public/assets/Images/sl_1/s1.jpg"
-    },
-    {
-      "id": 7,
-      "name": "num1",
-      "src": "../../../public/assets/Images/sl_1/s1.jpg"
-    },
-    {
-      "id": 8,
-      "name": "num1",
-      "src": "../../../public/assets/Images/sl_1/s1.jpg"
+      "id": 4,
+      "name": "Car Camera"
     }
   ]
 }
