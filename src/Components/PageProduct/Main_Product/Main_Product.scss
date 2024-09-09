@@ -17,7 +17,7 @@ $ziro: 0px;
         height: auto;
         padding-top: 20px;
         padding-bottom: 20px;
-         @include center;
+        @include center;
         .Slider_product {
           width: 97%;
           height: 350px;
@@ -25,8 +25,7 @@ $ziro: 0px;
       }
       .des2__product {
         width: 100%;
-        height: 400px;
-        background-color: aqua;
+        height: auto;
       }
     }
     @include responsive($mobile) {
@@ -37,7 +36,7 @@ $ziro: 0px;
         height: auto;
         padding-top: 20px;
         padding-bottom: 20px;
-         @include center;
+        @include center;
         .Slider_product {
           width: 95%;
           height: 450px;
@@ -45,8 +44,7 @@ $ziro: 0px;
       }
       .des2__product {
         width: 100%;
-        height: 400px;
-        background-color: aqua;
+        height: auto;
       }
     }
     @include responsive($tablet) {
@@ -65,8 +63,7 @@ $ziro: 0px;
       }
       .des2__product {
         width: 100%;
-        height: 400px;
-        background-color: aqua;
+        height: auto;
       }
     }
     @include responsive($laptop) {
@@ -99,8 +96,7 @@ $ziro: 0px;
       }
       .des2__product {
         width: 50%;
-        height: 400px;
-        background-color: aqua;
+        height: auto;
       }
     }
     @include responsive($desktop) {
@@ -121,8 +117,63 @@ $ziro: 0px;
       }
       .des2__product {
         width: 50%;
-        height: 400px;
-        background-color: aqua;
+        height: auto;
+        padding-top: 15px;
+        .des2_title {
+          width: 100%;
+          height: 120px;
+          border-bottom: 0.5px solid #5b5b5b59;
+          .pr_des2_ti {
+            font-size: 26px !important;
+            line-height: 30px !important;
+            font-weight: bolder !important;
+            color: black;
+            font-family: "roboto-bold";
+            margin-bottom: 5px;
+          }
+          .pr_des2_ti2 {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding-left: 10px;
+            img {
+              width: 35px;
+              height: 50px;
+              object-fit: cover;
+            }
+            .pr-des2-div {
+              width: auto;
+              height: 45px;
+              background-color: rgba(255, 182, 193, 0.527);
+              padding-left: 10px;
+              line-height: 45px;
+              border-radius: 0px 15px 15px 0px;
+              -webkit-border-radius: 0px 15px 15px 0px;
+              -moz-border-radius: 0px 15px 15px 0px;
+              -ms-border-radius: 0px 15px 15px 0px;
+              -o-border-radius: 0px 15px 15px 0px;
+              p {
+                font-size: 25px;
+                font-weight: 700;
+                font-family: roboto-bold;
+                color: #e64545;
+                display: inline;
+                line-height: 45px;
+              }
+              span{
+                display: inline;
+                padding-left: 20px;
+                font-size: 18px;
+                padding-right: 30px;
+                font-family: roboto-bold;
+                color: rgb(148, 90, 14);
+                line-height: 45px;
+              }
+            }
+          }
+        }
       }
     }
   }

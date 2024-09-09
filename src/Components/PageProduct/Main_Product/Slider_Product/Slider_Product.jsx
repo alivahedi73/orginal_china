@@ -7,15 +7,15 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-
-import "./styles.css";
-
+import "./Slider_Product.scss"
 // import required modules
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import RedoIcon from "@mui/icons-material/Redo";
 import ZoomInIcon from "@mui/icons-material/ZoomIn";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+// import data
+import{Slider_product} from "../../Product_data"
 const Slider_Product = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
@@ -37,18 +37,13 @@ const Slider_Product = () => {
           className="mySwiper2"
           id="sl-1"
         >
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </SwiperSlide>
+          {Slider_product.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <img src={item.src} key={index} />
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
         <Swiper
           onSwiper={setThumbsSwiper}
@@ -61,18 +56,13 @@ const Slider_Product = () => {
           className="mySwiper"
           id="sl-2"
         >
-          <SwiperSlide className="mini_slider">
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-          </SwiperSlide>
-          <SwiperSlide className="mini_slider">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </SwiperSlide>
-          <SwiperSlide className="mini_slider">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </SwiperSlide>
-          <SwiperSlide className="mini_slider">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </SwiperSlide>
+          {Slider_product.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <img src={item.src} key={index} />
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
         <div className="heart_slider">
           <FavoriteBorderIcon />

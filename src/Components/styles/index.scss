@@ -4,10 +4,20 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-   src: url(../public//assets/Fonts/Roboto-Regular.eot) format("eot");
+  src: url(../public//assets/Fonts/Roboto-Regular.eot) format("eot");
   src: url(../public//assets/Fonts/Roboto-Regular.ttf) format("ttf");
   src: url(../public//assets/Fonts/Roboto-Regular.woff) format("woff");
   src: url(../public//assets/Fonts/Roboto-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: roboto-bold;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../../public/assets/Fonts/Roboto-Bold.eot") format("eot");
+  src: url("../../../public/assets/Fonts/Roboto-Bold.ttf") format("ttf");
+  src: url("../../../public/assets/Fonts/Roboto-Bold.woff") format("woff");
+  src: url("../../../public/assets/Fonts/Roboto-Bold.woff2") format("woff2");
 }
 * {
   margin: 0;
