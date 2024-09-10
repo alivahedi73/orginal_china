@@ -32,5 +32,24 @@ export const product_detail = [
     svg_top_src: "../../../public/assets/Images/product/top.png",
     svg_name: "in Most Popular Handheld pulse oximeter",
     svg_red_name: "Top1",
+    price_sub: "500 Pieces",
+    price_sub_detail: "(MOQ)",
+    detail_name1: "Customization :",
+    detail_Customization: "Available",
+    detail_name2: "type :",
+    detail_type: "Finger Pulse Oximeter",
+    detail_name3: "Certification :",
+    detail_certi: "CE, FDA",
+  },
+];
+export const product_suggest = [
+  {
+    src_company_logo: "../../../public/assets/Images/product/company.webp",
+    name_company: "Contec Medical Systems Co., Ltd.",
+    company_name_sub: "Manufacturer/Factory, Other",
+    rate: "5.0",
+    dimond_src:
+      "../../../public/assets/Images/product/logo-spirit_2ddbd877.png",
+    suggest_src: "../../../public/assets/Images/product/qw.png",
   },
 ];
