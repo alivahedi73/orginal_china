@@ -1,0 +1,165 @@
+@import "../../../styles/mixin.scss";
+@import "../../../styles/responsive.scss";
+$ziro: 0px;
+.section2_pr {
+  width: 100%;
+  height: 100%;
+  .section2_h2 {
+    font-family: roboto-bold;
+    font-size: clamp(18px, 2vw, 23px);
+    color: black;
+    padding: 20px;
+  }
+  .section2_slider_product {
+    width: 100%;
+    height: 400px;
+    #section2_slider {
+      width: 100%;
+      height: 100%;
+      .swiper-button-prev {
+        @include responsive($ziro) {
+          width: 20px;
+          height: 20px;
+        }
+        @include responsive($mobile) {
+          width: 25px;
+          height: 25px;
+        }
+        @include responsive($tablet) {
+          width: 35px;
+          height: 35px;
+        }
+        @include responsive($laptop) {
+          width: 45px;
+          height: 45px;
+        }
+        @include responsive($desktop) {
+          width: 50px;
+          height: 50px;
+        }
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        box-shadow: 0.25px 5px 25px #5b5b5b48;
+        background-color: whitesmoke;
+        &::after {
+          font-size: clamp(16px, 2vw, 25px);
+          color: black;
+          font-weight: bolder;
+        }
+      }
+      .swiper-button-disabled {
+        display: none;
+      }
+      .swiper-button-next {
+        @include responsive($ziro) {
+          width: 20px;
+          height: 20px;
+        }
+        @include responsive($mobile) {
+          width: 25px;
+          height: 25px;
+        }
+        @include responsive($tablet) {
+          width: 35px;
+          height: 35px;
+        }
+        @include responsive($laptop) {
+          width: 45px;
+          height: 45px;
+        }
+        @include responsive($desktop) {
+          width: 50px;
+          height: 50px;
+        }
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        box-shadow: 0.25px 5px 25px #5b5b5b48;
+        background-color: whitesmoke;
+        &::after {
+          font-size: clamp(16px, 2vw, 25px);
+          color: black;
+          font-weight: bolder;
+        }
+      }
+      .swiper-slide {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        overflow: hidden;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        transition-duration: 300ms;
+        transition-property: all;
+        transition-timing-function: linear;
+        &:hover {
+          border: 0.5px solid #5b5b5b31;
+        }
+        .sec2_swiper_a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          .sec2_swiper_img {
+            width: 100%;
+            height: 230px;
+            object-fit: contain;
+          }
+          .sec2_swiper_p {
+            padding: 4px;
+            font-size: clamp(10px, 2vw, 14px);
+            line-height: 26px;
+            color: #5b5b5b;
+          }
+          .sec2_swiper_div {
+            width: 100%;
+            height: min-content;
+            padding-top: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 5px;
+            .sec2_swiper_div_pr1 {
+              font-size: clamp(14px, 2vw, 20px);
+              color: black;
+            }
+            .sec2_swiper_div_pr2 {
+              font-size: clamp(10px, 2vw, 14px);
+              color: #5b5b5b;
+              padding-top: 2px;
+            }
+          }
+          .sec2_swiper_div_num2 {
+            width: 100%;
+            height: min-content;
+            padding-left: 10px;
+            display: flex;
+            justify-content: start;
+            gap: 5px;
+            .sec2_swiper_div_num2_s1{
+            font-size: clamp(12px, 2vw, 16px);
+              color: #5b5b5b;
+            }
+            .sec2_swiper_div_num2_s2{
+            font-size: clamp(11px, 2vw, 15px);
+              color: #5b5b5b;
+            }
+          }
+        }
+      }
+    }
+  }
+}
