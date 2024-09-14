@@ -7,7 +7,9 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { slider_Proudcts_inBottom } from "../Slider_Product/data_Slider_Product";
 const Section2_product = () => {
+  let data = slider_Proudcts_inBottom;
   return (
     <>
       <div className="section2_pr">
@@ -47,42 +49,38 @@ const Section2_product = () => {
             className="mySwiper"
             id="section2_slider"
           >
-            <SwiperSlide>
-              <a
-                href="#"
-                className="sec2_swiper_a"
-                title="Contec Cms60d China Manufacturer SpO2 Monitor Handheld Pulse Oximeter"
-              >
-                <img
-                  src="../../../../../public/assets/Images/product/Fingertip-Pulse-Oximeter-Cms50q1-Oximetro-Pediatric-Oximeter.webp"
-                  alt=""
-                  className="sec2_swiper_img"
-                />
-                <p className="sec2_swiper_p">
-                  Contec Cms60d China Manufacturer SpO2 Monitor Handheld Pulse
-                  Oximeter
-                </p>
-                <div className="sec2_swiper_div">
-                  <span className="sec2_swiper_div_pr1">US$50.00-80.00</span>
-                  <span className="sec2_swiper_div_pr2"> / Piece</span>
-                </div>
-                <div className="sec2_swiper_div_num2">
-                  <span className="sec2_swiper_div_num2_s1">1 Piece</span>
-                  <span className="sec2_swiper_div_num2_s2"> (MOQ)</span>
-                </div>
-              </a>
-            </SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide>
-            <SwiperSlide>Slide 10</SwiperSlide>
-            <SwiperSlide>Slide 11</SwiperSlide>
-            <SwiperSlide>Slide 12</SwiperSlide>
+            {data.map((item, index) => {
+              return (
+                <SwiperSlide key={index + 1}>
+                  <a
+                    href={item.href}
+                    className="sec2_swiper_a"
+                    title={item.title}
+                  >
+                    <img
+                      src={item.img_src}
+                      alt=""
+                      className="sec2_swiper_img"
+                    />
+                    <p className="sec2_swiper_p">{item.p_name}</p>
+                    <div className="sec2_swiper_div">
+                      <span className="sec2_swiper_div_pr1">{item.price}</span>
+                      <span className="sec2_swiper_div_pr2">
+                        {item.detail_price}
+                      </span>
+                    </div>
+                    <div className="sec2_swiper_div_num2">
+                      <span className="sec2_swiper_div_num2_s1">
+                        {item.detail_price}
+                      </span>
+                      <span className="sec2_swiper_div_num2_s2">
+                        {item.detail_price_span}
+                      </span>
+                    </div>
+                  </a>
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </div>

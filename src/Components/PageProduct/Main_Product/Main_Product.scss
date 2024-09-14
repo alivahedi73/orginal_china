@@ -5,6 +5,7 @@ $ziro: 0px;
   width: 100%;
   height: auto;
   border-bottom: 0.5px solid #5b5b5b54;
+  padding-bottom: 16px;
   .describe_product {
     width: 100%;
     height: auto;
@@ -46,7 +47,6 @@ $ziro: 0px;
       .des2__product {
         width: 100%;
         height: auto;
-         
       }
     }
     @include responsive($tablet) {
@@ -65,7 +65,7 @@ $ziro: 0px;
       }
       .des2__product {
         width: 100%;
-        height: auto;         
+        height: auto;
       }
     }
     @include responsive($laptop) {
@@ -73,23 +73,29 @@ $ziro: 0px;
       height: auto;
       .des1__product {
         width: 50%;
-        height: auto;
         padding-top: 20px;
         padding-bottom: 20px;
+        position: sticky;
+        top: 0px;
+        left: 0;
+        overflow: hidden;
         @include center;
         @include responsive-minmsx($laptop, 1364px) {
+          height: 480px;
           .Slider_product {
             width: 510px;
             height: 480px;
           }
         }
         @include responsive-minmsx(1364px, 1476px) {
+          height: 566px;
           .Slider_product {
             width: 670px;
             height: 566px;
           }
         }
         @include responsive-minmsx(1476px, $desktop) {
+          height: 580px;
           .Slider_product {
             width: 722px;
             height: 580px;
@@ -99,7 +105,6 @@ $ziro: 0px;
       .des2__product {
         width: 50%;
         height: auto;
-        
       }
     }
     @include responsive($desktop) {
@@ -109,9 +114,13 @@ $ziro: 0px;
       margin: 10px auto;
       .des1__product {
         width: 50%;
-        height: auto;
+        height: 644px;
         padding-top: 20px;
         padding-bottom: 20px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        overflow: hidden;
         @include center;
         .Slider_product {
           width: 780px;
@@ -125,10 +134,17 @@ $ziro: 0px;
     }
   }
 }
-.main_product_sec2{
+.main_product_sec2 {
   width: 95%;
   height: auto;
   max-width: 1750px;
   margin: auto;
   padding-bottom: 10px;
+}
+.main_product_sec3 {
+  width: 95%;
+  height: auto;
+  max-width: 1750px;
+  margin: auto;
+  padding-top: 30px;
 }

@@ -3,6 +3,7 @@ import Slider_Product from "./Slider_Product/Slider_Product";
 import "../../styles/index.scss";
 import Right_Product from "./Right_Product/Right_Product";
 import Section2_product from "./Section2_product/Section2_product";
+import Section3_Product from "./Section3_Product/Section3_Product";
 const Main_Product = () => {
   return (
     <>
@@ -29,6 +30,11 @@ const Main_Product = () => {
         <Section2_product />
       </div>
       {/* End of section two */}
+      {/* start of section three */}
+      <div className="main_product_sec3">
+        <Section3_Product />
+      </div>
+      {/* end of section three */}
     </>
   );
 };

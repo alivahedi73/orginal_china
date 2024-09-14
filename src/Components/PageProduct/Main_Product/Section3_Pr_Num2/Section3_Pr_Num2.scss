@@ -1,0 +1,11 @@
+@import "../../../styles/mixin.scss";
+@import "../../../styles/responsive.scss";
+$ziro: 0px;
+.wdwdwdwdw{
+    width: 100%;
+    height: 100000px;
+    background-color: blue;
+    transition-duration: 500ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
