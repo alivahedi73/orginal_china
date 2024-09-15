@@ -1,11 +1,190 @@
 @import "../../../styles/mixin.scss";
 @import "../../../styles/responsive.scss";
 $ziro: 0px;
-.wwwwwwww{
-    width: 100%;
-    height: 80000px;
-    background-color: orange;
-    transition-duration: 500ms;
-    transition-property: all;
-    transition-timing-function: ease-in-out;
+.Section3__product__num1 {
+  width: 100%;
+  height: auto;
+  border: 0.5px solid #5b5b5b57;
+  margin-bottom: 20px;
+  .Section3__product__BasicInfo {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    .Section3__product__BasicInfo_h3 {
+      color: black;
+      font-size: clamp(14px, 2vw, 25px) !important;
+      font-family: roboto-bold;
+      padding-bottom: 20px;
+    }
+    .Section3__product_BasicInfo__div {
+      width: 100%;
+      height: auto;
+      .Section3__product_BasicInfo__div_main {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        .Section3__product_BasicInfo__div_sub {
+          width: 48%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          .sec3___pr_basic_left {
+            width: 50%;
+            border: 0.25px solid #5b5b5b27;
+            color: black;
+            font-size: clamp(8px, 2vw, 18px);
+            font-family: roboto-bold;
+            background-color: rgba(173, 216, 230, 0.123);
+            display: flex;
+            align-items: center;
+            @include responsive($ziro) {
+              padding-left: 2px;
+              padding-top: 5px;
+              padding-bottom: 5px;
+            }
+            @include responsive($mobile) {
+              padding-left: 5px;
+              padding-top: 8px;
+              padding-bottom: 8px;
+            }
+            @include responsive($tablet) {
+              padding-left: 10px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+            }
+            @include responsive($laptop) {
+              padding-left: 15px;
+              padding-top: 15px;
+              padding-bottom: 15px;
+            }
+          }
+          .sec3___pr_basic_right {
+            width: 50%;
+            border: 0.25px solid #5b5b5b27;
+            color: gray;
+            font-size: clamp(8px, 2vw, 18px);
+            padding-left: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 10px;
+            display: flex;
+            align-items: center;
+            @include responsive($ziro) {
+              padding-left: 2px;
+              padding-top: 5px;
+              padding-bottom: 5px;
+            }
+            @include responsive($mobile) {
+              padding-left: 5px;
+              padding-top: 8px;
+              padding-bottom: 8px;
+            }
+            @include responsive($tablet) {
+              padding-left: 10px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+            }
+            @include responsive($laptop) {
+              padding-left: 15px;
+              padding-top: 15px;
+              padding-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .Section3__product_productDescription {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding-top: 20px;
+    .Section3__product__productDescription_h3 {
+      color: black;
+      font-size: clamp(14px, 2vw, 25px) !important;
+      font-family: roboto-bold;
+      padding-bottom: 20px;
+    }
+    .section3__product_prDes_a1 {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .section3__product_prDes_divblue {
+      width: 100%;
+      height: 60px;
+      background-color: rgba(173, 216, 230, 0.5);
+      margin-top: 50px;
+      line-height: 60px;
+      padding-left: 5%;
+      font-size: clamp(12px, 2vw, 20px);
+      font-family: roboto-bold;
+      color: #5b5b5b;
+    }
+    .section3__product_prDes_titleblue {
+      width: 100%;
+      height: max-content;
+      color: blue;
+      font-size: clamp(1rem, 2vw, 1.75rem);
+      font-family: roboto-bold;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      text-align: justify;
+    }
+    .sec3_pr___img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .Section3__CompanyInfo_main {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 60px;
+    .sec3__company_div1{
+        width: 100%;
+        height: 36px;
+        border: 0.5px solid #5b5b5b;
+    }
+    h4{
+        font-size: clamp(14px,2vw,25px);
+        font-family: roboto-bold;
+        color: black;
+        padding-top: 16px;
+    }
+    p{
+        line-height: 32px;
+        padding-top: 10px;
+        text-align: justify;
+        font-size: clamp(14px,2vw,20px);
+        color: black;
+        padding-bottom: 20px;
+    }
+    .sec3__company_div2{
+        width: 100%;
+        height: 40px;
+        background-color: rgba(173, 216, 230, 0.452);
+        font-size: clamp(14px,2vw,20px);
+        line-height: 40px;
+        padding-left: 15px;
+    }
+    .sec3__company_img_des{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+  }
 }

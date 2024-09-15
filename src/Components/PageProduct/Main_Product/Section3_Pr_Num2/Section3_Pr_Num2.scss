@@ -1,11 +1,100 @@
 @import "../../../styles/mixin.scss";
 @import "../../../styles/responsive.scss";
 $ziro: 0px;
-.wdwdwdwdw{
-    width: 100%;
-    height: 100000px;
-    background-color: blue;
-    transition-duration: 500ms;
-    transition-property: all;
-    transition-timing-function: ease-in-out;
+.Section3__product__num2 {
+  width: 100%;
+  height: auto;
+  border: 0.5px solid #5b5b5b57;
+  margin-bottom: 20px;
+  .Section3__product__num2_companyProfile {
+    width: 95%;
+    margin: auto;
+    height: auto;
+    padding-bottom: 20px;
+    .Section3__product__num2_companyProfile_h3 {
+      padding-top: 15px;
+      padding-left: 10px;
+      font-size: clamp(16px, 2vw, 25px);
+      font-family: roboto-bold;
+      color: black;
+      padding-bottom: 10px;
+    }
+    .Section3__product__num2_companyProfile_n1 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: row wrap;
+      padding-bottom: 20px;
+      .Section3__product__num2_companyProfile_n1_sub1 {
+        height: auto;
+        transition-property: all;
+        transition-duration: 300ms;
+        transition-timing-function: linear;
+        @include responsive($ziro) {
+          width: 100%;
+          margin: auto;
+        }
+        @include responsive($mobile) {
+          width: 85%;
+          margin: auto;
+        }
+        @include responsive($tablet) {
+          width: 75%;
+          margin: auto;
+        }
+        @include responsive($laptop) {
+          width: 65%;
+          margin: auto;
+        }
+        @include responsive(1300px) {
+          width: 40%;
+        }
+        .section3_pr__num2__slider1 {
+          width: 100%;
+          height: 230px;
+          border: 0.5px solid #6b6b6b69;
+        }
+        .section3_pr__num2__slider1_a {
+          margin-top: 25px;
+          display: block;
+          width: 100%;
+          @include responsive($ziro) {
+            height: 25px;
+            line-height: 25px;
+          }
+          @include responsive($tablet) {
+            height: 35px;
+            line-height: 35px;
+          }
+          @include responsive($laptop) {
+            height: 50px;
+            line-height: 50px;
+          }
+          text-align: center;
+          border: 0.25px solid #6b6b6b69;
+          background-color: rgba(173, 216, 230, 0.068);
+          font-size: clamp(14px, 2vw, 20px);
+          transition-property: all;
+          transition-duration: 300ms;
+          transition-timing-function: linear;
+          font-family: roboto-bold;
+          &:hover {
+            background-color: rgba(173, 216, 230, 0.404);
+          }
+        }
+      }
+      .Section3__product__num2_companyProfile_n1_sub2 {
+        height: auto;
+        transition-property: all;
+        transition-duration: 300ms;
+        transition-timing-function: linear;
+        @include responsive($ziro) {
+          width: 100%;
+        }
+        @include responsive(1300px) {
+          width: 60%;
+        }
+      }
+    }
+  }
 }

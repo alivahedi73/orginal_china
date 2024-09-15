@@ -1,0 +1,229 @@
+@import "../../../../styles/mixin.scss";
+@import "../../../../styles/responsive.scss";
+$ziro: 0px;
+#section3____slider_1 {
+  width: 100%;
+  height: 100%;
+  &:hover {
+    .swiper-button-prev {
+      display: flex;
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+    }
+    .swiper-button-next {
+      display: flex;
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+    }
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: white;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .swiper-button-prev {
+    background-color: #2b2b2b9d;
+    left: 0;
+    height: 60px;
+    transform: translateX(-110%);
+    -webkit-transform: translateX(-110%);
+    -moz-transform: translateX(-110%);
+    -ms-transform: translateX(-110%);
+    -o-transform: translateX(-110%);
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    @include responsive($ziro) {
+      width: 30px;
+    }
+    @include responsive($tablet) {
+      width: 5%;
+    }
+    @include responsive($laptop) {
+      width: 8%;
+    }
+    &::after {
+      //   text-align: center;
+      line-height: 60px;
+      font-size: clamp(14px, 2vw, 30px);
+      color: whitesmoke;
+      font-weight: bolder;
+    }
+  }
+  .swiper-button-next {
+    background-color: #2b2b2b9d;
+    right: 0;
+    height: 60px;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    @include responsive($ziro) {
+      width: 30px;
+    }
+    @include responsive($tablet) {
+      width: 5%;
+    }
+    @include responsive($laptop) {
+      width: 8%;
+    }
+    &::after {
+      //   text-align: center;
+      line-height: 60px;
+      font-size: clamp(14px, 2vw, 30px);
+      color: whitesmoke;
+      font-weight: bolder;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: red;
+  }
+}
+.slider_hidden {
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #5b5b5b;
+  z-index: 999;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+}
+.slider2_hidden {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: whitesmoke;
+  border: none;
+}
+#section3____slider_2 {
+  width: 100%;
+  height: 100%;
+  &:hover {
+    .swiper-button-prev {
+      display: flex;
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+    }
+    .swiper-button-next {
+      display: flex;
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+    }
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: white;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 60%;
+      height: 60%;
+      object-fit: contain;
+    }
+  }
+  .swiper-button-prev {
+    background-color: #2b2b2b9d;
+    left: 0;
+     height: 60px;
+    transform: translateX(-110%);
+    -webkit-transform: translateX(-110%);
+    -moz-transform: translateX(-110%);
+    -ms-transform: translateX(-110%);
+    -o-transform: translateX(-110%);
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    @include responsive($ziro) {
+      width: 30px;
+    }
+    @include responsive($tablet) {
+      width: 10%;
+    }
+    @include responsive($laptop) {
+      width: 10%;
+    }
+    &::after {
+      //   text-align: center;
+      line-height: 60px;
+      font-size: clamp(14px, 2vw, 30px);
+      color: whitesmoke;
+      font-weight: bolder;
+    }
+  }
+  .swiper-button-next {
+    background-color: #2b2b2b9d;
+    right: 0;
+    height: 60px;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    @include responsive($ziro) {
+      width: 30px;
+    }
+    @include responsive($tablet) {
+      width: 10%;
+    }
+    @include responsive($laptop) {
+      width: 10%;
+    }
+    &::after {
+      //   text-align: center;
+      line-height: 60px;
+      font-size: clamp(14px, 2vw, 30px);
+      color: whitesmoke;
+      font-weight: bolder;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: red;
+  }
+  .swiper-pagination-bullet {
+    width: 25px;
+    height: 25px;
+  }
+}
