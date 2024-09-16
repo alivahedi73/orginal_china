@@ -69,11 +69,11 @@ $ziro: 0px;
     background-color: #2b2b2b9d;
     right: 0;
     height: 60px;
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
+    transform: translateX(110%);
+    -webkit-transform: translateX(110%);
+    -moz-transform: translateX(110%);
+    -ms-transform: translateX(110%);
+    -o-transform: translateX(110%);
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: ease-in-out;
@@ -121,8 +121,8 @@ $ziro: 0px;
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
   background-color: whitesmoke;
   border: none;
 }
@@ -164,7 +164,7 @@ $ziro: 0px;
   .swiper-button-prev {
     background-color: #2b2b2b9d;
     left: 0;
-     height: 60px;
+    height: 60px;
     transform: translateX(-110%);
     -webkit-transform: translateX(-110%);
     -moz-transform: translateX(-110%);
@@ -223,7 +223,21 @@ $ziro: 0px;
     background-color: red;
   }
   .swiper-pagination-bullet {
-    width: 25px;
-    height: 25px;
+    @include responsive($ziro) {
+      width: 10px;
+      height: 10px;
+    }
+    @include responsive($tablet) {
+      width: 15px;
+      height: 15px;
+    }
+    @include responsive($laptop) {
+      width: 20px;
+      height: 20px;
+    }
+    @include responsive($desktop) {
+      width: 25px;
+      height: 25px;
+    }
   }
 }

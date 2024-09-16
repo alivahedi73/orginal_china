@@ -24,12 +24,14 @@ $ziro: 0px;
       height: auto;
       display: flex;
       flex-flow: row wrap;
+      justify-content: space-between;
       padding-bottom: 20px;
       .Section3__product__num2_companyProfile_n1_sub1 {
         height: auto;
         transition-property: all;
         transition-duration: 300ms;
         transition-timing-function: linear;
+        padding-bottom: 20px;
         @include responsive($ziro) {
           width: 100%;
           margin: auto;
@@ -43,11 +45,10 @@ $ziro: 0px;
           margin: auto;
         }
         @include responsive($laptop) {
-          width: 65%;
-          margin: auto;
+          width: 28%;
         }
         @include responsive(1300px) {
-          width: 40%;
+          width: 39%;
         }
         .section3_pr__num2__slider1 {
           width: 100%;
@@ -91,10 +92,291 @@ $ziro: 0px;
         @include responsive($ziro) {
           width: 100%;
         }
+        @include responsive($laptop) {
+          width: 69%;
+        }
         @include responsive(1300px) {
-          width: 60%;
+          width: 59%;
+        }
+        .SEC3_PR_Main_br {
+          border-top: 0.5px solid #2b2b2b3d;
+        }
+        .SEC3_PR_Main {
+          width: 100%;
+          height: auto;
+          display: flex;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 10px;
+          line-height: 26px;
+          .SEC3_PR_Main_left {
+            width: 40%;
+            height: auto;
+            p {
+              font-size: clamp(9px, 2vw, 18px);
+              color: gray;
+              font-family: roboto-bold;
+            }
+          }
+          .SEC3_PR_Main_right {
+            width: 60%;
+            height: auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: start;
+            align-items: center;
+            p {
+              display: inline-block;
+              font-size: clamp(9px, 2vw, 18px);
+              color: black;
+              font-family: roboto-bold;
+            }
+            a {
+              display: inline-block;
+              font-size: clamp(9px, 2vw, 16px);
+              color: black;
+              font-family: roboto-bold;
+              transition-duration: 300ms;
+              transition-timing-function: linear;
+              transition-property: all;
+              padding-left: 5px;
+              padding-right: 5px;
+              &:hover {
+                color: red;
+              }
+            }
+            span {
+              display: inline;
+              font-size: clamp(9px, 2vw, 18px);
+              color: black;
+              font-family: roboto-bold;
+              padding-left: 5px;
+              padding-right: 5px;
+            }
+            div {
+              display: inline;
+              a {
+                display: inline-block;
+                font-size: clamp(9px, 2vw, 18px);
+                color: rgb(47, 102, 153);
+                font-family: roboto-bold;
+                transition-duration: 300ms;
+                transition-timing-function: linear;
+                transition-property: all;
+                &:hover {
+                  color: red;
+                }
+              }
+              span {
+                display: inline;
+                font-size: clamp(9px, 2vw, 18px);
+                color: black;
+                font-family: roboto-bold;
+                padding-left: 5px;
+                padding-right: 5px;
+              }
+            }
+          }
         }
       }
+    }
+    .Section3__product__num2_companyProfile__pragraph {
+      width: 100%;
+      height: auto;
+      .Section3__product__num2_companyProfile__pragraph_p1 {
+        font-size: clamp(12px, 2vw, 18px);
+        text-align: justify;
+        line-height: 32px;
+        color: #2b2b2b;
+        padding-bottom: 20px;
+      }
+      .sec3__p_hidden {
+        font-size: clamp(16px, 2vw, 20px);
+        text-align: justify;
+        line-height: 32px;
+        color: #2b2b2b;
+      }
+      .Sec3___product__companyprofile_____show__hidden {
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        opacity: 0;
+        height: 0;
+        transition-duration: 300ms;
+        transition-property: all;
+        transition-timing-function: linear;
+        p {
+          display: none;
+          transition-duration: 300ms;
+          transition-property: all;
+          transition-timing-function: linear;
+        }
+      }
+
+      .Sec3___product__companyprofile_____show {
+        height: auto;
+        transition-duration: 300ms;
+        transition-property: all;
+        transition-timing-function: linear;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        opacity: 1;
+        p {
+          display: block;
+          font-size: clamp(12px, 2vw, 18px);
+          text-align: justify;
+          line-height: 32px;
+          color: #2b2b2b;
+          padding-bottom: 20px;
+          transition-duration: 300ms;
+          transition-property: all;
+          transition-timing-function: linear;
+        }
+      }
+      .Section3__product__num2_companyProfile__pragraph__hidden {
+        margin-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: max-content;
+        .sec3____hidden {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          transition-delay: 300ms;
+          transition-property: all;
+          transition-timing-function: ease-in-out;
+          p {
+            font-size: clamp(16px, 2vw, 20px);
+            font-family: roboto-bold;
+            color: rgb(47, 102, 153);
+            transition-delay: 300ms;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+          }
+          span {
+            svg {
+              font-size: clamp(16px, 2vw, 35px);
+              font-family: roboto-bold;
+              color: rgb(47, 102, 153);
+              transition-delay: 500ms;
+              transition-property: all;
+              transition-timing-function: ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section3_product_num2_Trade_Capacity_main {
+    width: 95%;
+    margin: auto;
+    height: auto;
+    padding-top: 15px;
+    .section3_product_num2_Trade_Capacity_main_h3 {
+      padding-top: 15px;
+      padding-left: 10px;
+      font-size: clamp(16px, 2vw, 25px);
+      font-family: roboto-bold;
+      color: black;
+      padding-bottom: 10px;
+    }
+    .section3_product_num2_Trade_Capacity_main_div1 {
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 60px;
+      .trade_div {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        .trade_left {
+          width: 41%;
+          font-size: clamp(9px, 2vw, 16px);
+          color: gray;
+          font-family: roboto-bold;
+        }
+        .trade_right {
+          width: 55%;
+          font-size: clamp(9px, 2vw, 16px);
+          color: black;
+          font-family: roboto-bold;
+          text-align: justify;
+          line-height: 26px;
+        }
+      }
+    }
+    .section3_product_num2_Trade_Capacity_main_div2 {
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 30px;
+      .trade_div {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        .trade_left {
+          width: 41%;
+          font-size: clamp(9px, 2vw, 16px);
+          color: gray;
+          font-family: roboto-bold;
+        }
+        .trade_right {
+          width: 55%;
+          font-size: clamp(9px, 2vw, 16px);
+          color: black;
+          font-family: roboto-bold;
+          text-align: justify;
+          line-height: 26px;
+          .trade_right_table {
+            width: 100%;
+            display: flex;
+            .trade_right_table_left {
+              width: 35%;
+              font-size: clamp(9px, 2vw, 15px);
+              color: black;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-left: 5px;
+              border: 0.25px solid #5b5b5b60;
+              text-align: center;
+            }
+            .show{
+              background-color: rgba(173, 216, 230, 0.308);
+            }
+            .trade_right_table_right {
+              width: 35%;
+              font-size: clamp(9px, 2vw, 15px);
+              color: black;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-left: 5px;
+              border: 0.25px solid #5b5b5b60;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section3_product_num2_CompanyShow_main{
+    width: 95%;
+    margin: auto;
+    height: auto;
+    padding-bottom: 20px;
+    .section3_product_num2_CompanyShow_h3{
+      padding-left: 10px;
+      font-size: clamp(16px, 2vw, 25px);
+      font-family: roboto-bold;
+      color: black;
+      padding-bottom: 10px;
     }
   }
 }
