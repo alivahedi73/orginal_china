@@ -1,10 +1,11 @@
-@import "../../../../styles/mixin.scss";
+@import "../.././../../styles/mixin.scss";
 @import "../../../../styles/responsive.scss";
 $ziro: 0px;
-.Section3_pr_company_slider_nm1 {
+.Section3_pr_company_slider_nm2 {
   width: 100%;
   height: auto;
-  .sec3_slider___1_cer {
+  .sec3_slider___1_cer_1 {
+    width: 100%;
     padding-left: 15px;
     display: flex;
     align-items: center;
@@ -12,20 +13,19 @@ $ziro: 0px;
     padding-bottom: 20px;
     gap: 15px;
     h4 {
-      font-size: clamp(12px, 2vw, 18px);
-      color: #2b2b2b;
+      font-size: clamp(11px, 2vw, 16px);
+      color: black;
       font-family: roboto-bold;
     }
     p {
-      font-size: clamp(10px, 2vw, 16px);
+      font-size: clamp(11px, 2vw, 16px);
       color: #6b6b6b;
-      font-family: roboto-bold;
     }
   }
-  .start__slider1 {
+  .start___slider_2{
     width: 100%;
-    height: 300px;
-    #Slider_____1 {
+    height: 300px;  
+    #Slider_____2_pic_comp {
       width: 100%;
       height: 100%;
       &:hover {
@@ -112,6 +112,7 @@ $ziro: 0px;
         }
       }
     }
+     
   }
 }
 .slider2_hidden___1 {
@@ -130,56 +131,6 @@ $ziro: 0px;
   #sl_____3 {
     width: 100%;
     height: 100%;
-      &:hover {
-        .swiper-button-next {
-          transform: translateX(0);
-          -webkit-transform: translateX(0);
-          -moz-transform: translateX(0);
-          -ms-transform: translateX(0);
-          -o-transform: translateX(0);
-        }
-        .swiper-button-prev {
-          transform: translateX(0);
-          -webkit-transform: translateX(0);
-          -moz-transform: translateX(0);
-          -ms-transform: translateX(0);
-          -o-transform: translateX(0);
-        }
-      }
-      .swiper-button-next {
-        background-color: #5b5b5b;
-        right: 0;
-        height: 50px;
-        transition-duration: 300ms;
-        transition-property: all;
-        transition-timing-function: linear;
-        transform: translateX(110%);
-        -webkit-transform: translateX(110%);
-        -moz-transform: translateX(110%);
-        -ms-transform: translateX(110%);
-        -o-transform: translateX(110%);
-        &::after {
-          font-size: clamp(14px, 2vw, 25px);
-          color: whitesmoke;
-        }
-      }
-      .swiper-button-prev {
-        background-color: #5b5b5b;
-        left: 0;
-        height: 50px;
-        transition-duration: 300ms;
-        transition-property: all;
-        transition-timing-function: linear;
-        transform: translateX(-110%);
-        -webkit-transform: translateX(-110%);
-        -moz-transform: translateX(-110%);
-        -ms-transform: translateX(-110%);
-        -o-transform: translateX(-110%);
-        &::after {
-          font-size: clamp(14px, 2vw, 25px);
-          color: whitesmoke;
-        }
-      }
     .swiper-slide {
       width: 100%;
       height: 100%;

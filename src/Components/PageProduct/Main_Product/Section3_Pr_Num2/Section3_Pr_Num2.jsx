@@ -11,14 +11,24 @@ import { BorderTop } from "@mui/icons-material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Section3_pr_company_slider from "./Section3_pr_company_slider/Section3_pr_company_slider";
+import { useInViewContext } from "../../../../Context/ContextProvider";
+import Section3_Company_picture from "./Section3_Company_picture/Section3_Company_picture";
+import section3_pr_bilborder from "./section3_pr_bilborder/section3_pr_bilborder";
 const Section3_Pr_Num2 = () => {
   let [click, setClick] = useState(true);
+  const { sec3_Ref_4, sec3_Ref_5, sec3_Ref_6, sec3_Ref_7 } = useInViewContext();
   return (
     <>
       <div className="Section3__product__num2">
         {/* start of company profile */}
-        <div className="Section3__product__num2_companyProfile">
-          <h3 className="Section3__product__num2_companyProfile_h3">
+        <div
+          className="Section3__product__num2_companyProfile"
+          ref={sec3_Ref_4}
+        >
+          <h3
+            className="Section3__product__num2_companyProfile_h3"
+            id="prode_4"
+          >
             Company Profiles
           </h3>
           <div className="Section3__product__num2_companyProfile_n1">
@@ -74,7 +84,13 @@ const Section3_Pr_Num2 = () => {
             <p className="Section3__product__num2_companyProfile__pragraph_p1">
               {sect3____pargraph[0].p}
             </p>
-            {click ? <p className="sec3__p_hidden">....</p> : <></>}
+            <p
+              className={`${
+                click == false ? "sec3__p_hidden_hidden" : "sec3__p_hidden"
+              }`}
+            >
+              ....
+            </p>
             <div
               className={`${
                 click
@@ -110,10 +126,16 @@ const Section3_Pr_Num2 = () => {
         {/* end of company profile */}
         {/* start of trade project */}
         <div className="section3_product_num2_Trade_Capacity_main">
-          <h3 className="section3_product_num2_Trade_Capacity_main_h3">
+          <h3
+            className="section3_product_num2_Trade_Capacity_main_h3"
+            id="prode_5"
+          >
             Trade Capacity
           </h3>
-          <div className="section3_product_num2_Trade_Capacity_main_div1">
+          <div
+            className="section3_product_num2_Trade_Capacity_main_div1"
+            ref={sec3_Ref_5}
+          >
             {section3___trade.map((item, index) => {
               return (
                 <div className="trade_div" key={index}>
@@ -123,10 +145,16 @@ const Section3_Pr_Num2 = () => {
               );
             })}
           </div>
-          <h3 className="section3_product_num2_Trade_Capacity_main_h3">
+          <h3
+            className="section3_product_num2_Trade_Capacity_main_h3"
+            id="prode_6"
+          >
             Production Capacity
           </h3>
-          <div className="section3_product_num2_Trade_Capacity_main_div2">
+          <div
+            className="section3_product_num2_Trade_Capacity_main_div2"
+            ref={sec3_Ref_6}
+          >
             {section3_trade1.map((item, index) => {
               return (
                 <div className="trade_div" key={index}>
@@ -164,9 +192,16 @@ const Section3_Pr_Num2 = () => {
         </div>
         {/* end of trade project */}
         {/* start of company show */}
-        <div className="section3_product_num2_CompanyShow_main">
-          <h3 className="section3_product_num2_CompanyShow_h3">Company Show</h3>
+        <div
+          className="section3_product_num2_CompanyShow_main"
+          ref={sec3_Ref_7}
+        >
+          <h3 className="section3_product_num2_CompanyShow_h3" id="prode_7">
+            Company Show
+          </h3>
           <Section3_pr_company_slider />
+          <Section3_Company_picture />
+          <section3_pr_bilborder />
         </div>
         {/* end of company show */}
       </div>

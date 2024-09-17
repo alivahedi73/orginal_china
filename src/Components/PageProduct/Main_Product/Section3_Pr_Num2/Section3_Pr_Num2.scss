@@ -45,7 +45,7 @@ $ziro: 0px;
           margin: auto;
         }
         @include responsive($laptop) {
-          width: 28%;
+          width: 39%;
         }
         @include responsive(1300px) {
           width: 39%;
@@ -93,7 +93,7 @@ $ziro: 0px;
           width: 100%;
         }
         @include responsive($laptop) {
-          width: 69%;
+          width: 59%;
         }
         @include responsive(1300px) {
           width: 59%;
@@ -113,7 +113,7 @@ $ziro: 0px;
             width: 40%;
             height: auto;
             p {
-              font-size: clamp(9px, 2vw, 18px);
+              font-size: clamp(11px, 2vw, 18px);
               color: gray;
               font-family: roboto-bold;
             }
@@ -127,7 +127,7 @@ $ziro: 0px;
             align-items: center;
             p {
               display: inline-block;
-              font-size: clamp(9px, 2vw, 18px);
+              font-size: clamp(9px, 2vw, 16px);
               color: black;
               font-family: roboto-bold;
             }
@@ -147,7 +147,7 @@ $ziro: 0px;
             }
             span {
               display: inline;
-              font-size: clamp(9px, 2vw, 18px);
+              font-size: clamp(9px, 2vw, 16px);
               color: black;
               font-family: roboto-bold;
               padding-left: 5px;
@@ -157,12 +157,14 @@ $ziro: 0px;
               display: inline;
               a {
                 display: inline-block;
-                font-size: clamp(9px, 2vw, 18px);
+                font-size: clamp(9px, 2vw, 16px);
                 color: rgb(47, 102, 153);
                 font-family: roboto-bold;
                 transition-duration: 300ms;
                 transition-timing-function: linear;
                 transition-property: all;
+                text-align: justify;
+                word-spacing: -2px;
                 &:hover {
                   color: red;
                 }
@@ -186,6 +188,7 @@ $ziro: 0px;
       .Section3__product__num2_companyProfile__pragraph_p1 {
         font-size: clamp(12px, 2vw, 18px);
         text-align: justify;
+        word-spacing: -2px;
         line-height: 32px;
         color: #2b2b2b;
         padding-bottom: 20px;
@@ -193,8 +196,18 @@ $ziro: 0px;
       .sec3__p_hidden {
         font-size: clamp(16px, 2vw, 20px);
         text-align: justify;
+        word-spacing: -2px;
         line-height: 32px;
         color: #2b2b2b;
+        opacity: 1;
+        display: block;
+        transition-duration: 300ms;
+        transition-property: all;
+        transition-timing-function: linear;
+      }
+      .sec3__p_hidden_hidden{
+        opacity: 0;
+        display: none;
       }
       .Sec3___product__companyprofile_____show__hidden {
         transform: translateY(-100%);
@@ -208,6 +221,7 @@ $ziro: 0px;
         transition-property: all;
         transition-timing-function: linear;
         p {
+          height: 0;
           display: none;
           transition-duration: 300ms;
           transition-property: all;
@@ -228,8 +242,10 @@ $ziro: 0px;
         opacity: 1;
         p {
           display: block;
+          height: auto;
           font-size: clamp(12px, 2vw, 18px);
           text-align: justify;
+          word-spacing: -2px;
           line-height: 32px;
           color: #2b2b2b;
           padding-bottom: 20px;
@@ -308,6 +324,7 @@ $ziro: 0px;
           color: black;
           font-family: roboto-bold;
           text-align: justify;
+          word-spacing: -2px;
           line-height: 26px;
         }
       }
@@ -334,6 +351,7 @@ $ziro: 0px;
           color: black;
           font-family: roboto-bold;
           text-align: justify;
+          word-spacing: -2px;
           line-height: 26px;
           .trade_right_table {
             width: 100%;
@@ -348,7 +366,7 @@ $ziro: 0px;
               border: 0.25px solid #5b5b5b60;
               text-align: center;
             }
-            .show{
+            .show {
               background-color: rgba(173, 216, 230, 0.308);
             }
             .trade_right_table_right {
@@ -366,12 +384,12 @@ $ziro: 0px;
       }
     }
   }
-  .section3_product_num2_CompanyShow_main{
+  .section3_product_num2_CompanyShow_main {
     width: 95%;
     margin: auto;
     height: auto;
     padding-bottom: 20px;
-    .section3_product_num2_CompanyShow_h3{
+    .section3_product_num2_CompanyShow_h3 {
       padding-left: 10px;
       font-size: clamp(16px, 2vw, 25px);
       font-family: roboto-bold;

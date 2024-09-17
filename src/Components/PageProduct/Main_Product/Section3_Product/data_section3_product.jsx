@@ -26,3 +26,10 @@ export const section3_title = [
     ],
   },
 ];
+export const sec3_pr_form = [
+  {
+    id: 1,
+    src: "../../../../../public/assets/Images/product/section3_product/profile.jpg",
+    name: "Mr. Eddy Li",
+  },
+];

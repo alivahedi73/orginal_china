@@ -1,0 +1,25 @@
+@import "../../../../styles/mixin.scss";
+@import "../../../../styles/responsive.scss";
+$ziro: 0px;
+.section3_pr_bilborder_main {
+  width: 100%;
+  height: auto;
+  .sec3_slider___1_cer_2 {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    gap: 15px;
+    h4 {
+      font-size: clamp(11px, 2vw, 16px);
+      color: black;
+      font-family: roboto-bold;
+    }
+    p {
+      font-size: clamp(11px, 2vw, 16px);
+      color: #6b6b6b;
+    }
+  }
+}
