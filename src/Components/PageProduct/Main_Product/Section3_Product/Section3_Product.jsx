@@ -13,16 +13,16 @@ import Section3_Pr_Num2 from "../Section3_Pr_Num2/Section3_Pr_Num2";
 import Section3_Pr_Num1 from "../Section3_Pr_Num1/Section3_Pr_Num1";
 import { useInViewContext } from "../../../../Context/ContextProvider";
 import StarIcon from "@mui/icons-material/Star";
+import TrackChangesIcon from "@mui/icons-material/TrackChanges";
 const Section3_Product = () => {
   let [click, setClick] = useState(false);
-    const [email, setEmail] = useState("");
-    const [error, setError] = useState("");
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
   const validateEmail = (email) => {
     const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
     if (!emailRegex.test(email)) {
       setError("Please enter a valid email address.");
-    }
-    else {
+    } else {
       setError("");
     }
   };
@@ -266,6 +266,36 @@ const Section3_Product = () => {
               <div className="pr3_input__2_num2">
                 <img src={sec3_pr_form[0].src} alt="" />
                 <p>{sec3_pr_form[0].name}</p>
+              </div>
+            </div>
+            <div className="pr3_input__3">
+              <div className="form1_num1">
+                <p>
+                  <StarIcon />
+                </p>
+                <span>Message :</span>
+              </div>
+              <div className="form1_num2">
+                <textarea
+                  name="comment"
+                  id="comment_input"
+                  minLength={20}
+                  maxLength={4000}
+                  placeholder="We suggest you detail your prdouct requirements and company information here."
+                ></textarea>
+                <p>Enter between 20 to 4,000 characters.</p>
+                <div className="form_submit">
+                  <button id="subbmitt">Send</button>
+                  <p className="detail_submit">
+                    This is not what you are looking for?
+                  </p>
+                  <a href="#" className="detail_div">
+                    <span>
+                      <TrackChangesIcon />
+                    </span>
+                    <p>Post a Sourcing Request Now</p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

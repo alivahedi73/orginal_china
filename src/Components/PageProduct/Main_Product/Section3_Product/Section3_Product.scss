@@ -212,15 +212,14 @@ $ziro: 0px;
         margin: auto;
       }
       .pr3_input__1 {
-        width: 90%;
+        width: 95%;
         height: auto;
         margin: auto;
         margin-bottom: 15px;
         display: flex;
-        justify-content: start;
+        justify-content: space-between;
         flex-flow: row wrap;
         align-items: start;
-        column-gap: 10px;
         @include responsive($ziro) {
           .form1_num1 {
             width: max-content;
@@ -231,7 +230,7 @@ $ziro: 0px;
         }
         @include responsive($tablet) {
           .form1_num1 {
-            width: 10%;
+            width: 15%;
           }
           .form1_num2 {
             width: 80%;
@@ -240,7 +239,7 @@ $ziro: 0px;
         .form1_num1 {
           display: flex;
           height: 30px;
-          justify-content: center;
+          justify-content: end;
           align-items: center;
           gap: 2px;
           p {
@@ -267,7 +266,7 @@ $ziro: 0px;
             transition-timing-function: linear;
             transition-duration: 300ms;
             &::placeholder {
-              color: #5b5b5ba1;
+              color: #5b5b5b55;
               font-size: clamp(10px, 2vw, 16px);
             }
             &:focus {
@@ -286,19 +285,25 @@ $ziro: 0px;
         }
       }
       .pr3_input__2{
-        width: 90%;
+        
+        width: 95%;
         height: auto;
         margin: auto;
         margin-top: 15px;
         display: flex;
-        justify-content: start;
+        justify-content: space-between;
         align-items: center;
         gap: 15px;
         .pr3_input__2_num1{
           width: 15%;
           display: flex;
           height: 30px;
-          justify-content: center;
+          @include responsive ($ziro){
+            justify-content: start;
+          }
+          @include responsive ($tablet){
+            justify-content: end;
+          }
           align-items: center;
           gap: 2px;
           p {
@@ -313,7 +318,7 @@ $ziro: 0px;
           }
         }
         .pr3_input__2_num2{
-          width: 70%;
+          width: 80%;
           height: 50px;
           display: flex;
           justify-content: start;
@@ -329,6 +334,130 @@ $ziro: 0px;
             font-size: clamp(12px,2vw,18px);
             font-family: roboto-bold;
             color: #6b6b6b;
+          }
+        }
+      }
+      .pr3_input__3{
+        width: 95%;
+        height: auto;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: start;
+         @include responsive($ziro) {
+          .form1_num1 {
+            width: 150px;
+            justify-content: start;
+          }
+          .form1_num2 {
+            width: 100%;
+          }
+        }
+        @include responsive($tablet) {
+          .form1_num1 {
+            width: 15%;
+            justify-content: end;
+          }
+          .form1_num2 {
+            width: 80%;
+          }
+        }
+        .form1_num1 {
+          display: flex;
+          height: 30px;
+          align-items: center;
+          gap: 2px;
+          p {
+            svg {
+              font-size: clamp(8px, 2vw, 12px);
+              color: red;
+            }
+          }
+          span {
+            font-size: clamp(12px, 2vw, 18px);
+            color: #6b6b6b;
+          }
+        }
+        .form1_num2{
+          height: auto;
+          #comment_input{
+            width: 100%;
+            height: 125px;
+            border: 2px solid #5b5b5b37;
+            line-height: 26px;
+            overflow: auto;
+            padding-left: 15px;
+             resize: none;
+            &::placeholder{
+             font-size: clamp(10px,2vw,14px);
+             color: #2b2b2b6e;
+            }
+            &:focus {
+              border: 2px solid rgb(94, 193, 255);
+            }
+            &:hover {
+              border: 2px solid #2b2b2b71;
+            }
+          }
+          p{
+            font-size: clamp(11px,2vw,16px);
+            color: #2b2b2b6e;
+          }
+          .form_submit{
+            width: 100%;
+            height: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+              width: 67px;
+              height: 40px;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: center;
+              align-items: center;
+              background-color: rgb(244, 62, 62);
+              color: whitesmoke;
+              font-size: clamp(12px,2vw,18px);
+              border-radius: 4px;
+              transition-duration: 300ms;
+              transition-property: all;
+              transition-timing-function: linear;
+              &:hover{
+                background-color: red;
+              }
+            }
+            .detail_submit{
+              font-size: clamp(8px,2vw,14px);
+              color: #2b2b2b64;
+              width: max-content;
+              @include responsive ($ziro){
+                display: none;
+              }
+              @include responsive ($tablet){
+                display: block;
+              }
+            }
+            .detail_div{
+              display: flex;
+              width: max-content;
+              align-items: center;
+              gap: 2px;
+              span{
+                svg{
+                  font-size: clamp(8px,2vw,14px);
+                  color: red;
+                }
+              }
+              p{
+                font-size: clamp(8px,2vw,14px);
+                color: red;
+              }
+            }
           }
         }
       }
