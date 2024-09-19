@@ -1,0 +1,250 @@
+@import "../../../styles/mixin.scss";
+@import "../../../styles/responsive.scss";
+$ziro: 0px;
+.Product_group_main {
+  @include responsive($ziro) {
+    display: none;
+  }
+  @include responsive($laptop) {
+    display: block;
+    width: 95%;
+    height: auto;
+    margin: auto;
+  }
+  .pr_group_h4 {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-family: roboto-bold;
+    font-size: clamp(14px, 2vw, 20px);
+    color: black;
+  }
+  .group_search {
+    padding-left: 15px;
+    width: 50%;
+    height: 35px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    .div_1_group {
+      width: 200px;
+      height: 100%;
+      border: 1px solid #5b5b5b7d;
+      overflow: hidden;
+      display: flex;
+      .search_proudct_group {
+        width: 70%;
+        height: 100%;
+        &::placeholder {
+          color: red;
+        }
+        &:focus {
+          border: 1px solid #5b5b5baa;
+        }
+      }
+      .button_search {
+        width: 30%;
+        height: 100%;
+        border: 1px solid #5b5b5bfb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 300ms linear;
+        &:active {
+          background-color: #5b5b5b18;
+          svg {
+            transform: scale(1.1);
+          }
+        }
+        svg {
+          color: #5b5b5b;
+          font-size: clamp(12px, 2vw, 25px);
+          transition: all 300ms linear;
+        }
+      }
+    }
+    .div_2_group {
+      width: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      &:hover {
+        span {
+          svg {
+            color: red;
+          }
+        }
+        a {
+          color: red;
+        }
+      }
+      span {
+        svg {
+          color: rgb(0, 85, 255);
+          font-size: clamp(18px, 2vw, 25px);
+          transition-duration: 300ms;
+          transition-timing-function: linear;
+          transition-property: all;
+        }
+      }
+      a {
+        display: block;
+        width: max-content;
+        color: rgb(0, 85, 255);
+        font-size: clamp(12px, 2vw, 16px);
+        transition-duration: 300ms;
+        transition-timing-function: linear;
+        transition-property: all;
+      }
+    }
+  }
+  .product_detail_main {
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    .detail___1_main {
+      width: 25%;
+      height: 25px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 2px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .group_show {
+        width: max-content;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: relative;
+        &:hover {
+          .detail_hidden {
+            display: flex;
+            flex-flow: column wrap;
+
+            opacity: 1;
+            transform: scale(1);
+          }
+          .datail___1_a {
+            text-decoration: underline;
+          }
+        }
+        .detail_hidden {
+          position: absolute;
+          top: 0;
+          left: 100%;
+          width: 150px;
+          height: auto;
+          display: none;
+          transition-delay: 300ms;
+          transition-property: all;
+          transition-timing-function: linear;
+          opacity: 0;
+          transform: scale(0);
+          background-color: white;
+          border-radius: 8px;
+          z-index: 5;
+          .hidden_detail_1 {
+            width: 100%;
+            height: 25px;
+            text-align: start;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            line-height: 25px;
+            color: #6b6b6b;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: clamp(10px, 2vw, 14px);
+            text-decoration: none;
+            transition-duration: 300ms;
+            transition-property: all;
+            transition-timing-function: linear;
+            &:hover {
+              color: black;
+              text-decoration: underline;
+            }
+          }
+        }
+        .datail___1_a {
+          display: block;
+          height: 100%;
+          width: max-content;
+          text-align: start;
+          line-height: center;
+          color: #1b1b1b;
+          transition-duration: 300ms;
+          transition-property: all;
+          transition-timing-function: linear;
+          text-decoration: none;
+          cursor: pointer;
+          font-size: clamp(10px, 2vw, 18px);
+        }
+        p {
+          height: 100%;
+          width: max-content;
+          display: flex;
+          align-items: end;
+          svg {
+            color: #3b3b3b;
+            font-size: clamp(16px, 2vw, 20px);
+          }
+        }
+      }
+    }
+  }
+  .product_address {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3px;
+    overflow: hidden;
+    .address_1 {
+     width: min-content;
+     white-space: nowrap;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 3px;
+      a {
+        color: #2b2b2b;
+        font-size: clamp(5px, 2vw, 13px);
+        transition-duration: 300ms;
+        transition-property: all;
+        transition-timing-function: linear;
+        &:hover {
+          color: red;
+          
+        }
+      }
+      svg {
+        color: #2b2b2b;
+        font-size: clamp(10px, 2vw, 18px);
+      }
+      p {
+        font-size: clamp(5px, 2vw, 12px);
+        color: #2b2b2b;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &::after{
+            content: "...";
+            padding-left: 2px;
+        }
+      }
+    }
+  }
+}

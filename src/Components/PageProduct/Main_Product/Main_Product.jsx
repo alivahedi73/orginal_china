@@ -8,6 +8,8 @@ import Section4_Product from "./Section4_Product/Section4_Product";
 import Section5_Product from "./Section5_Product/Section5_Product";
 import ChatIcon from "@mui/icons-material/Chat";
 import DashboardCustomizeIcon from "@mui/icons-material/DashboardCustomize";
+import Footter_product from "./Footter_product/Footter_product";
+import Product_Group from "./Product_Group/Product_Group";
 const Main_Product = () => {
   return (
     <>
@@ -48,6 +50,17 @@ const Main_Product = () => {
           <Section5_Product />
         </div>
       </div>
+      {/* start of product group in size laptop and desktop */}
+      <div className="product_group_main">
+        <Product_Group />
+      </div>
+      {/* end of product group in size laptop and desktop */}
+      {/* strat of footter */}
+      <div className="footter___product">
+        <Footter_product />
+      </div>
+      {/* end of footter */}
+      <div className="blank"></div>
       {/* start of connect mobile */}
       <div className="mobile_fix_connect">
         <a href="#" className="mobile_1">
@@ -66,9 +79,7 @@ const Main_Product = () => {
             <span>Customizer</span>
           </div>
         </a>
-        <div className="button_fix">
-          contact Supplier
-        </div>
+        <div className="button_fix">contact Supplier</div>
       </div>
       {/* end of connect mobile */}
       {/* end of section four */}
