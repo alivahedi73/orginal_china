@@ -1,5 +1,5 @@
-import "./Section3_pr_company_slider.scss";
-import { slider______1 } from "./data____Section3_pr_company_slider";
+import "./Bilborder.scss";
+import { data_bilborder } from "./data_Bilborder";
 import { FreeMode, Navigation } from "swiper/modules";
 import * as React from "react";
 // import React, { useRef, useState } from "react";
@@ -14,22 +14,19 @@ import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
-// import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import { Height } from "@mui/icons-material";
 import CloseIcon from "@mui/icons-material/Close";
-const Section3_pr_company_slider = () => {
-    const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+const Bilborder = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <>
-      <div className="Section3_pr_company_slider_nm1">
-        <div className="sec3_slider___1_cer">
-          <h4>Certificates</h4>
-          <p>{slider______1.length} items</p>
+      <div className="main_bilborder">
+        <div className="bilborder_cer">
+          <h4>Bulletin Board</h4>
+          <p>{data_bilborder.length} items</p>
         </div>
-        <div className="start__slider1">
+        <div className="slider_bilborder">
           <Swiper
             breakpoints={{
               0: {
@@ -54,9 +51,9 @@ const Section3_pr_company_slider = () => {
             freeMode={true}
             modules={[FreeMode, Navigation]}
             className="mySwiper"
-            id="Slider_____1"
+            id="bil_slider"
           >
-            {slider______1.map((item, index) => {
+            {data_bilborder.map((item, index) => {
               return (
                 <SwiperSlide key={index + 1} onClick={handleOpen}>
                   <div className="sl___1">
@@ -85,14 +82,14 @@ const Section3_pr_company_slider = () => {
             }}
           >
             <Fade in={open}>
-              <div className="slider2_hidden___1">
+              <div className="slider2_hidden___modal">
                 <Swiper
                   navigation={true}
                   modules={[Navigation]}
                   className="mySwiper"
-                  id="sl_____3"
+                  id="modal_bilborder"
                 >
-                  {slider______1.map((item,index)=>{
+                  {data_bilborder.map((item, index) => {
                     return (
                       <SwiperSlide key={index}>
                         <div className="modal_div_1">
@@ -102,14 +99,13 @@ const Section3_pr_company_slider = () => {
                         <div className="modal_div_img">
                           <img src={item.src} alt="" />
                         </div>
-                        <div className="modal_div_p">{item.name}</div>
+                        <div className="modal_div_p">{item.des}</div>
                         <div className="button_close" onClick={handleClose}>
                           <CloseIcon />
                         </div>
                       </SwiperSlide>
                     );
                   })}
-                  
                 </Swiper>
               </div>
             </Fade>
@@ -122,4 +118,4 @@ const Section3_pr_company_slider = () => {
   );
 };
 
-export default Section3_pr_company_slider;
+export default Bilborder;

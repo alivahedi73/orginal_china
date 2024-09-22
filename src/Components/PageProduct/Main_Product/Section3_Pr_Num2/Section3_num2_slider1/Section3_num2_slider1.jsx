@@ -18,7 +18,7 @@ import Fade from "@mui/material/Fade";
 // import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Height } from "@mui/icons-material";
-
+import CloseIcon from "@mui/icons-material/Close";
 
 const Section3_num2_slider1 = () => {
   let data_1 = data_section3_product_num2__slider1;

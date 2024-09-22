@@ -1,0 +1,109 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/responsive.scss";
+$ziro: 0px;
+.why_choose_main {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  max-width: 1750px;
+  margin-bottom: 20px;
+  @include responsive($ziro) {
+    margin-top: 30px;
+  }
+  @include responsive($laptop) {
+    margin-top: 50px;
+  }
+  @include responsive($desktop) {
+    margin-top: 80px;
+  }
+  .supplier_header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include responsive($ziro) {
+      gap: 8px;
+    }
+    @include responsive($laptop) {
+      gap: 15px;
+    }
+    @include responsive($desktop) {
+      gap: 20px;
+    }
+
+    .squre_sup_head {
+      @include responsive($ziro) {
+        width: 10px;
+        height: 10px;
+      }
+      @include responsive($mobile) {
+        width: 12px;
+        height: 12px;
+      }
+      @include responsive($tablet) {
+        width: 15px;
+        height: 15px;
+      }
+      @include responsive($desktop) {
+        width: 20px;
+        height: 20px;
+      }
+      transform: rotate(45deg);
+      background-color: rgb(209, 167, 81);
+    }
+    .why_choose_header {
+      font-size: clamp(16px, 2vw, 45px);
+      font-family: roboto-bold;
+    }
+  }
+  .class_suuplier {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    .p_supplier_main_1 {
+      line-height: 45px;
+      font-size: clamp(12px, 2vw, 25px);
+      color: #5b5b5b;
+      text-align: justify;
+      word-spacing: 2px;
+      img {
+        @include responsive($ziro) {
+          width: 15px;
+          height: 15px;
+        }
+        @include responsive($mobile) {
+          width: 18px;
+          height: 18px;
+        }
+        @include responsive($tablet) {
+          width: 22px;
+          height: 22px;
+        }
+        @include responsive($laptop) {
+          width: 30px;
+          height: 30px;
+        }
+        object-fit: cover;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .end_why_choose{
+    width: 90%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    .end__1{
+        width: 25%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+  }
+}

@@ -1,5 +1,5 @@
-import "./Section3_pr_company_slider.scss";
-import { slider______1 } from "./data____Section3_pr_company_slider";
+import "./Policy_slider.scss";
+import { slider_policy____1 } from "./data_Policy_slider";
 import { FreeMode, Navigation } from "swiper/modules";
 import * as React from "react";
 // import React, { useRef, useState } from "react";
@@ -18,18 +18,18 @@ import Fade from "@mui/material/Fade";
 import Typography from "@mui/material/Typography";
 import { Height } from "@mui/icons-material";
 import CloseIcon from "@mui/icons-material/Close";
-const Section3_pr_company_slider = () => {
+const Policy_slider = () => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
   return (
     <>
-      <div className="Section3_pr_company_slider_nm1">
-        <div className="sec3_slider___1_cer">
-          <h4>Certificates</h4>
-          <p>{slider______1.length} items</p>
+      <div className="policy_main">
+        <div className="sec3_slider___policy">
+          <h4>Service Policy</h4>
+          <p>{slider_policy____1.length} items</p>
         </div>
-        <div className="start__slider1">
+        <div className="slider_policy">
           <Swiper
             breakpoints={{
               0: {
@@ -54,9 +54,9 @@ const Section3_pr_company_slider = () => {
             freeMode={true}
             modules={[FreeMode, Navigation]}
             className="mySwiper"
-            id="Slider_____1"
+            id="Slider_policy_1"
           >
-            {slider______1.map((item, index) => {
+            {slider_policy____1.map((item, index) => {
               return (
                 <SwiperSlide key={index + 1} onClick={handleOpen}>
                   <div className="sl___1">
@@ -92,7 +92,7 @@ const Section3_pr_company_slider = () => {
                   className="mySwiper"
                   id="sl_____3"
                 >
-                  {slider______1.map((item,index)=>{
+                  {slider_policy____1.map((item, index) => {
                     return (
                       <SwiperSlide key={index}>
                         <div className="modal_div_1">
@@ -109,7 +109,6 @@ const Section3_pr_company_slider = () => {
                       </SwiperSlide>
                     );
                   })}
-                  
                 </Swiper>
               </div>
             </Fade>
@@ -122,4 +121,4 @@ const Section3_pr_company_slider = () => {
   );
 };
 
-export default Section3_pr_company_slider;
+export default Policy_slider;

@@ -1,0 +1,20 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/responsive.scss";
+$ziro: 0px;
+.help_suppliers_banner {
+  width: 100%;
+  height: auto;
+  background-color: rgb(52, 70, 155);
+  .help_suppliers_main {
+    width: 100%;
+    height: auto;
+    max-width: 1750px;
+    margin: auto;
+    height: auto;
+    .suppliers_banner_img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

@@ -203,48 +203,170 @@ $ziro: 0px;
     }
   }
   .product_address {
-    width: 100%;
+    width: 95%;
     height: auto;
     margin-top: 10px;
     margin-bottom: 50px;
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 3px;
-    overflow: hidden;
-    .address_1 {
-     width: min-content;
-     white-space: nowrap;
+    .product_address_num1 {
+      width: max-content;
+      height: auto;
       display: flex;
+      align-items: center;
+      gap: 10px;
+      .address_1 {
+        height: auto;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .adress_1_num1 {
+          width: max-content;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          a {
+            color: #2b2b2b;
+            font-size: clamp(5px, 2vw, 13px);
+            transition-duration: 300ms;
+            transition-property: all;
+            transition-timing-function: linear;
+            &:hover {
+              color: red;
+            }
+          }
+          svg {
+            color: #2b2b2b;
+            font-size: clamp(10px, 2vw, 18px);
+          }
+        }
+      }
+    }
+    .product_address_num2 {
+      flex-grow: 1;
       justify-content: start;
       align-items: center;
-      gap: 3px;
-      a {
-        color: #2b2b2b;
-        font-size: clamp(5px, 2vw, 13px);
+      .address_1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .address_1_num2 {
+          width: 100%;
+          p {
+            font-size: clamp(5px, 2vw, 12px);
+            color: #2b2b2b;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &::after {
+              content: "...";
+              padding-left: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .hot_search_main {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    flex-flow: row wrap;
+    row-gap: 15px;
+    column-gap: 10px;
+    .hot_search_link {
+      display: block;
+      padding: 10px 15px;
+      border-radius: 25px;
+      border: 0.5px solid #5b5b5b5d;
+      transition-duration: 300ms;
+      transition-property: all;
+      transition-timing-function: linear;
+      &:hover {
+        border: 1px solid #1b1b1b;
+      }
+    }
+  }
+  .click_moreless_pr_group {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    .click_pr_group_p {
+      font-size: clamp(14px, 2vw, 18px);
+      font-family: roboto-bold;
+      color: black;
+      transition-duration: 300ms;
+      transition-property: all;
+      transition-timing-function: ease-in-out;
+    }
+    svg {
+      color: black;
+      font-size: clamp(16px, 2vw, 25px);
+      transition-duration: 300ms;
+      transition-property: all;
+      transition-timing-function: linear;
+    }
+  }
+  .div_click_pr_group_p {
+    width: 100%;
+    margin-bottom: 20px;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: linear;
+    padding-left: 10px;
+    padding-right: 10px;
+    .less_hidden_title {
+      padding-bottom: 20px;
+      font-size: clamp(14px, 2vw, 16px);
+      color: #1b1b1b;
+    }
+    .div_less_hidden_title {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: start;
+      padding-left: 10px;
+      padding-right: 10px;
+      align-items: center;
+      flex-flow: row wrap;
+      row-gap: 15px;
+      column-gap: 10px;
+      .div_less_hidden_title_link {
+        display: block;
+        padding: 10px 15px;
+        border-radius: 25px;
+        border: 0.5px solid #5b5b5b5d;
         transition-duration: 300ms;
         transition-property: all;
         transition-timing-function: linear;
         &:hover {
-          color: red;
-          
-        }
-      }
-      svg {
-        color: #2b2b2b;
-        font-size: clamp(10px, 2vw, 18px);
-      }
-      p {
-        font-size: clamp(5px, 2vw, 12px);
-        color: #2b2b2b;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        &::after{
-            content: "...";
-            padding-left: 2px;
+          border: 1px solid #1b1b1b;
         }
       }
     }
+  }
+  .click_div_hidden {
+    height: 0px;
+    display: none;
+    opacity: 0;
+  }
+  .click_div_show {
+    height: auto;
+    display: block;
+    opacity: 1;
   }
 }

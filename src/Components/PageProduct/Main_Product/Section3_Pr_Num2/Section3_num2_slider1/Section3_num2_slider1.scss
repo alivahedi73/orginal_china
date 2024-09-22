@@ -155,10 +155,51 @@ $ziro: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     img {
       width: 60%;
       height: 60%;
       object-fit: contain;
+    }
+    .button_close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      @include responsive($ziro) {
+        width: 25px;
+        height: 25px;
+      }
+      @include responsive($mobile) {
+        width: 30px;
+        height: 30px;
+      }
+      @include responsive($tablet) {
+        width: 40px;
+        height: 40px;
+      }
+      @include responsive($laptop) {
+        width: 50px;
+        height: 50px;
+      }
+      @include responsive($ziro) {
+        width: 80px;
+        height: 80px;
+      }
+      background-color: rgb(245, 51, 51);
+      color: whitesmoke;
+      transition-duration: 300ms;
+      transition-property: all;
+      transition-timing-function: linear;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: red;
+      }
+      svg {
+        color: whitesmoke;
+        font-size: clamp(16px, 2vw, 35px);
+      }
     }
   }
   .swiper-button-prev {

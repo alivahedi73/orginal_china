@@ -1,10 +1,10 @@
 @import "../../../../styles/mixin.scss";
 @import "../../../../styles/responsive.scss";
 $ziro: 0px;
-.Section3_pr_company_slider_nm1 {
+.main_bilborder {
   width: 100%;
   height: auto;
-  .sec3_slider___1_cer {
+  .bilborder_cer {
     padding-left: 15px;
     display: flex;
     align-items: center;
@@ -22,11 +22,11 @@ $ziro: 0px;
       font-family: roboto-bold;
     }
   }
-  .start__slider1 {
+  .slider_bilborder {
     width: 100%;
     height: 300px;
-    #Slider_____1 {
-      width: 100%;
+    #bil_slider{
+     width: 100%;
       height: 100%;
       &:hover {
         .swiper-button-next {
@@ -110,11 +110,11 @@ $ziro: 0px;
             color: red;
           }
         }
-      }
+      } 
     }
   }
 }
-.slider2_hidden___1 {
+.slider2_hidden___modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -127,7 +127,7 @@ $ziro: 0px;
   height: 80%;
   background-color: whitesmoke;
   border: none;
-  #sl_____3 {
+  #modal_bilborder {
     width: 100%;
     height: 100%;
       &:hover {
@@ -265,3 +265,4 @@ $ziro: 0px;
     }
   }
 }
+

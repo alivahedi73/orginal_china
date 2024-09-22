@@ -13,7 +13,8 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Section3_pr_company_slider from "./Section3_pr_company_slider/Section3_pr_company_slider";
 import { useInViewContext } from "../../../../Context/ContextProvider";
 import Section3_Company_picture from "./Section3_Company_picture/Section3_Company_picture";
-import section3_pr_bilborder from "./section3_pr_bilborder/section3_pr_bilborder";
+import Bilborder from "./Bilborder/Bilborder";
+import Policy_slider from "./policy_slider/policy_slider";
 const Section3_Pr_Num2 = () => {
   let [click, setClick] = useState(true);
   const { sec3_Ref_4, sec3_Ref_5, sec3_Ref_6, sec3_Ref_7 } = useInViewContext();
@@ -200,8 +201,9 @@ const Section3_Pr_Num2 = () => {
             Company Show
           </h3>
           <Section3_pr_company_slider />
+            <Policy_slider />
           <Section3_Company_picture />
-          <section3_pr_bilborder />
+          <Bilborder />
         </div>
         {/* end of company show */}
       </div>
