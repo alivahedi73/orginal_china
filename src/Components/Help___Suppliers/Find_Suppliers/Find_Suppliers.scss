@@ -1,0 +1,64 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/responsive.scss";
+$ziro: 0px;
+.find_suppliers_main {
+  width: 100%;
+  max-width: 1750px;
+  background-image: linear-gradient(white, rgba(255, 174, 0, 0.063));
+  margin: auto;
+  height: auto;
+  .eight_major_header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include responsive($ziro) {
+      gap: 8px;
+    }
+    @include responsive($laptop) {
+      gap: 15px;
+    }
+    @include responsive($desktop) {
+      gap: 20px;
+    }
+
+    .eight_head {
+      margin-top: 50px;
+      @include responsive($ziro) {
+        width: 10px;
+        height: 10px;
+      }
+      @include responsive($mobile) {
+        width: 12px;
+        height: 12px;
+      }
+      @include responsive($tablet) {
+        width: 15px;
+        height: 15px;
+      }
+      @include responsive($desktop) {
+        width: 20px;
+        height: 20px;
+      }
+      transform: rotate(45deg);
+      background-color: rgb(209, 167, 81);
+    }
+    .eight_header {
+      margin-top: 50px;
+      font-size: clamp(0.75rem, 2vw, 2rem);
+      font-family: roboto-bold;
+      color: black;
+    }
+  }
+  .major_div_img {
+    width: 95%;
+    margin: auto;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

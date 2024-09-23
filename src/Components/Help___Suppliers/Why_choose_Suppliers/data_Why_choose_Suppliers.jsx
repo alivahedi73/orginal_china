@@ -21,7 +21,7 @@ export const end_chosse = [
   },
   {
     id: 3,
-    name: "3. On-site verification，including raw materials warehouse、production plant、testing laboratory、 finished goods warehouse, etc",
+    name: "3.On-site verification including raw materials warehouse production plant testing laboratory finished goods warehouse , etc",
     src: "../../../../public/assets/Images/Help_suppliers/step3.png",
   },
   {

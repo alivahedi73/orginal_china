@@ -1,0 +1,237 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/responsive.scss";
+$ziro: 0px;
+.main_pattern {
+  width: 100%;
+  height: auto;
+  background-color: #efefef;
+  .pattern__supp {
+    width: 100%;
+    height: auto;
+    max-width: 1750px;
+    margin: auto;
+    background-image: url(../../../../public/assets/Images/Help_suppliers/pattern_suppliers.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .eight_major_header {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include responsive($ziro) {
+        gap: 8px;
+      }
+      @include responsive($laptop) {
+        gap: 15px;
+      }
+      @include responsive($desktop) {
+        gap: 20px;
+      }
+
+      .eight_head {
+        @include responsive($ziro) {
+          width: 10px;
+          height: 10px;
+        }
+        @include responsive($mobile) {
+          width: 12px;
+          height: 12px;
+        }
+        @include responsive($tablet) {
+          width: 15px;
+          height: 15px;
+        }
+        @include responsive($desktop) {
+          width: 20px;
+          height: 20px;
+        }
+        transform: rotate(45deg);
+        background-color: rgb(209, 167, 81);
+      }
+      .eight_header {
+        font-size: clamp(0.75rem, 2vw, 2rem);
+        font-family: roboto-bold;
+        color: black;
+      }
+    }
+    .card_pattern {
+      width: 95%;
+      margin: auto;
+      height: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-flow: row wrap;
+      .Card_main_pattern {
+        @include responsive($ziro) {
+          width: 45%;
+        }
+        @include responsive($laptop) {
+          width: 22%;
+        }
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        row-gap: 20px;
+        padding: 10px;
+        padding-bottom: 10px;
+        .card_img_pattern {
+          width: 100%;
+          height: auto;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          flex-flow: column wrap;
+          .img___card {
+            width: 100%;
+            height: auto;
+            margin: auto;
+            object-fit: cover;
+          }
+          .card_absoulte_pat {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 14%;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+              padding-left: 10px;
+              font-size: clamp(7px, 2vw, 15px);
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+              font-weight: 700;
+              color: whitesmoke;
+            }
+            span {
+              padding-right: 10px;
+              svg {
+                font-size: clamp(18px, 2vw, 28px);
+                color: whitesmoke;
+                font-weight: bolder;
+              }
+            }
+          }
+        }
+        .link_report_card {
+          display: block;
+          padding: 6px 28px;
+          background-color: white;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          font-size: clamp(6px, 2vw, 15px);
+          font-weight: 700;
+          color: #cca760;
+          border-radius: 26px;
+          transition-duration: 300ms;
+          transition-property: all;
+          transition-timing-function: linear;
+          &:hover {
+            background-color: rgb(223, 223, 223);
+          }
+        }
+      }
+    }
+    .benfit_div {
+      width: 95%;
+      height: auto;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      @include responsive($ziro){
+        .benfit_1{
+            width: 40%;
+        }
+        .benfit_2{
+            width: 60%;
+        }
+      }
+      @include responsive($tablet){
+        .benfit_1{
+            width: 60%;
+        }
+        .benfit_2{
+            width: 40%;
+        }
+      }
+      .benfit_1 {
+        height: auto;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+      .benfit_2 {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        @include responsive($ziro){
+            row-gap: 0px;
+        }
+        @include responsive($tablet){
+            row-gap: 10px;
+        }
+        @include responsive($laptop){
+            row-gap: 30px;
+        }
+        @include responsive($desktop){
+            row-gap: 50px;
+        }
+        .div_benfit_card {
+          width: 90%;
+          margin: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: start;
+
+         .span_benfit____card {
+            width: 10%;
+            span {
+              svg {
+                color: green;
+                font-size: clamp(14px, 2vw, 40px);
+              }
+            }
+           
+          }
+          .P-benfit___card{
+            width: 90%;
+             .title_p_benfit {
+              display: inline;
+              color: black;
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+              font-weight: 700;
+              font-size: clamp(8px, 2vw, 16px);
+              line-height: 5px;
+            }
+            .benfit_p_card {
+              display: inline;
+              color: #1b1b1b;
+              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+              font-weight: 500;
+              font-size: clamp(5px, 2vw, 16px);
+              padding-left: 10px;
+              line-height: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

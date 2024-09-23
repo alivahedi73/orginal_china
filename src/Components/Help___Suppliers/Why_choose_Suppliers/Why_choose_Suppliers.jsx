@@ -3,6 +3,7 @@ import {
   Why_choose_Suppliers_img,
   end_chosse,
 } from "./data_Why_choose_Suppliers";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 const Why_choose_Suppliers = () => {
   return (
     <>
@@ -41,9 +42,27 @@ const Why_choose_Suppliers = () => {
         </div>
         <div className="end_why_choose">
           {end_chosse.map((item, index) => {
-            return <div className="end__1" key={index}>
-                <div className="card_end_1"></div>
-            </div>;
+            return (
+              <div className="choose_main_end">
+                <div className="end__1" key={index}>
+                  <div className="card_end_1">
+                    <div className="end__main">
+                      <div className="end__main_img">
+                        <img src={item.src} alt="" />
+                      </div>
+                      <div className="end__main_p">{item.name}</div>
+                    </div>
+                  </div>
+                </div>
+                {item.id == 4 ? (
+                  <></>
+                ) : (
+                  <div className="end__2">
+                    <ArrowRightAltIcon />
+                  </div>
+                )}
+              </div>
+            );
           })}
         </div>
       </div>
