@@ -1,0 +1,233 @@
+@import "../../styles//mixin.scss";
+@import "../../styles/responsive.scss";
+$ziro: 0px;
+$max: 1400px;
+.FAQ {
+  width: 100%;
+  height: auto;
+  max-width: $max;
+  margin: auto;
+  padding: 35px 0;
+  .FAQ_title {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #222222;
+    line-height: 48px;
+  }
+  .FAQ_Link_div {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 10px;
+    .FAQ_Link {
+      width: 100%;
+      height: auto;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #2e8ae6;
+      text-decoration: underline;
+      text-decoration-color: black;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 0.5em;
+    }
+  }
+  .FAQ_menu {
+    width: 95%;
+    margin: auto;
+    margin-top: 35px;
+    height: 416px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .FAQ_left {
+      width: 45%;
+      height: 100%;
+      background-color: #f5f5f8;
+      border: 1px solid #bfbfc0;
+      border-right: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      .FAQ_item {
+        width: 100%;
+        @include responsive($ziro) {
+          padding: 9px 2px;
+          font-size: 0.85rem;
+        }
+        @include responsive($mobile) {
+          padding: 8px 5px;
+          font-size: 0.95rem;
+        }
+        @include responsive($tablet) {
+          padding: 15px 12px;
+          font-size: 1rem;
+        }
+        @include responsive($laptop) {
+          padding: 20px 20px;
+          font-size: 1.125rem;
+        }
+        @include responsive($desktop) {
+          padding: 25px 30px;
+          font-size: 1.125rem;
+        }
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #2b2b2b;
+      }
+      .FAQ_item_active {
+        width: 100%;
+        @include responsive($ziro) {
+          padding: 9px 2px;
+          font-size: 0.85rem;
+        }
+        @include responsive($mobile) {
+          padding: 8px 5px;
+          font-size: 0.95rem;
+        }
+        @include responsive($tablet) {
+          padding: 15px 12px;
+          font-size: 1rem;
+        }
+        @include responsive($laptop) {
+          padding: 20px 20px;
+          font-size: 1.125rem;
+        }
+        @include responsive($desktop) {
+          padding: 25px 30px;
+          font-size: 1.125rem;
+        }
+
+        font-weight: 700;
+        color: black;
+        background-color: white;
+      }
+    }
+    .FAQ_right {
+      width: 55%;
+      height: 100%;
+      background-color: white;
+      border: 1px solid #bfbfc0;
+      border-left: none;
+      .FAQ_data {
+        @include responsive($ziro) {
+          width: 95%;
+          margin: auto;
+          height: 95%;
+          .FAQ_data_title {
+            font-size: 1rem;
+            margin-top: 5px;
+          }
+          .FAQ_type1 {
+            font-size: 0.75rem;
+            margin-top: 5px;
+            img {
+              width: 1rem;
+              height: 1rem;
+            }
+            a {
+              font-size: 0.75rem;
+            }
+          }
+          .FAQ_type2 {
+            font-size: 0.75rem;
+            line-height: 1rem;
+            margin-top: 0px;
+          }
+        }
+        @include responsive($tablet) {
+          width: 90%;
+          margin: auto;
+          height: 90%;
+          .FAQ_data_title {
+            font-size: 1.5rem;
+          }
+          .FAQ_type1 {
+            font-size: 1rem;
+            img {
+              width: 1.75rem;
+              height: 1.75rem;
+            }
+            a {
+              font-size: 1rem;
+            }
+          }
+          .FAQ_type2 {
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+        }
+        @include responsive($laptop) {
+          width: 80%;
+          margin: auto;
+          height: 80%;
+          .FAQ_data_title {
+            font-size: 1.5rem;
+          }
+          .FAQ_type1 {
+            font-size: 1rem;
+            img {
+              width: 1.75rem;
+              height: 1.75rem;
+            }
+            a {
+              font-size: 1rem;
+            }
+          }
+          .FAQ_type2 {
+            font-size: 1rem;
+            line-height: 1.5rem;
+          }
+        }
+        .FAQ_data_title {
+          width: 100%;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #222222;
+          line-height: 2.25rem;
+          margin-top: 35px;
+        }
+        .FAQ_type1 {
+          width: 100%;
+          height: auto;
+          margin-top: 25px;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #222222;
+          p {
+            display: inline;
+          }
+          img {
+            display: inline;
+            width: 1.75rem;
+            height: 1.75rem;
+            object-fit: cover;
+          }
+          a {
+            padding-left: 5px;
+            color: #2e8ae6;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5rem;
+          }
+        }
+        .FAQ_type2 {
+          width: 100%;
+          height: auto;
+          margin-top: 10px;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #222222;
+        }
+      }
+    }
+  }
+}

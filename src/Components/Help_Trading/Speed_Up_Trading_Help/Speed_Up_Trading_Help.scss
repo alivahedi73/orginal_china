@@ -1,0 +1,30 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/responsive.scss";
+$ziro: 0px;
+$max: 1400px;
+.speed_up_main {
+  width: 100%;
+  height: auto;
+  padding: 50px 10px;
+  background-color: white;
+  max-width: $max;
+  margin: auto;
+  .speed_up_h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #222222;
+    font-family: roboto-bold;
+  }
+  .speed_up_div {
+    width: 95%;
+    margin: auto;
+    text-align: justify;
+    font-size: 1rem;
+    color: #555555;
+    line-height: 24px;
+    max-width: 1000px;
+    margin-top: 20px;
+    text-align-last: center;
+ 
+  }
+}

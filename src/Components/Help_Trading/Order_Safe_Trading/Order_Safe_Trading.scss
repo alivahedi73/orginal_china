@@ -1,0 +1,115 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/responsive.scss";
+$ziro: 0px;
+$max: 1400px;
+.order_trading {
+  width: 100%;
+  max-width: $max;
+  margin: auto;
+  height: auto;
+  background-color: #ffffff;
+  padding: 35px 0px;
+  .order_h2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #222222;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+  }
+  .order_div {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 20px;
+    .order_1 {
+      @include responsive($ziro) {
+        width: 95%;
+      }
+      @include responsive($mobile) {
+        width: 85%;
+      }
+      @include responsive($tablet) {
+        width: 75%;
+      }
+      @include responsive($laptop) {
+        width: 41%;
+      }
+      height: auto;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    .order_2 {
+      @include responsive($ziro) {
+        width: 95%;
+      }
+      @include responsive($mobile) {
+        width: 85%;
+      }
+      @include responsive($tablet) {
+        width: 75%;
+      }
+      @include responsive($laptop) {
+        width: 55%;
+      }
+      height: auto;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: start;
+      row-gap: 18px;
+      .main_order {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        .order_2_1 {
+          width: 5%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: start;
+          margin-top: 7px;
+          svg {
+            font-size: 1rem;
+            color: black;
+          }
+        }
+        .order_2_2 {
+          width: 92%;
+          height: auto;
+          h5 {
+            width: 100%;
+            height: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            color: #222222;
+            font-weight: 700;
+          }
+          .order_pt {
+            width: 100%;
+            height: auto;
+            color: #222222;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            .order_link {
+              padding: 0px 5px;
+              font-size: 1rem;
+              font-family: Arial, Helvetica, sans-serif;
+              color: #2e8ae6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
