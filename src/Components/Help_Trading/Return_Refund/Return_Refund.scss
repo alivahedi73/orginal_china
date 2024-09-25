@@ -1,0 +1,118 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/responsive.scss";
+$ziro: 0px;
+$max: 1400px;
+.return_refound {
+  width: 100%;
+  background-color: #dfdfe0;
+  height: auto;
+  padding-top: 35px;
+  .return_main_refound {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    max-width: $max;
+    .return_header {
+      width: 100%;
+      height: auto;
+      line-height: 3rem;
+      font-size: 2rem;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222222;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    .FAQ_Link_div {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      padding-bottom: 20px;
+      .FAQ_Link {
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+        line-height: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #2e8ae6;
+        text-decoration: underline;
+        text-decoration-color: black;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 0.5em;
+      }
+    }
+    .return_flex {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      row-gap: 25px;
+      align-items: center;
+      padding-bottom: 2rem;
+      .card_return {
+        @include responsive($ziro) {
+          width: 100%;
+          height: auto;
+          padding: 1rem;
+        }
+        @include responsive($laptop) {
+          width: 45%;
+          height: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+
+        background-color: white;
+        border-radius: 4px;
+        .card_title_return {
+          width: 95%;
+          margin: auto;
+          height: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem;
+          column-gap: 1rem;
+          img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+          }
+          .card__ti_return {
+            flex-grow: 1;
+            @include responsive($ziro) {
+              font-size: 1rem;
+              line-height: 1.5rem;
+            }
+            @include responsive($laptop) {
+              font-size: 1.5rem;
+              line-height: 2.25rem;
+            }
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222222;
+            font-weight: 700;
+          }
+        }
+        .return_card_paragraph {
+          padding-top: 1rem;
+          width: 95%;
+          margin: auto;
+          height: auto;
+          @include responsive($ziro) {
+            font-size: 0.85rem;
+          }
+          @include responsive($laptop) {
+            font-size: 1rem;
+          }
+          line-height: 1.5rem;
+          color: #222222;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: justify;
+          word-spacing: -2px;
+        }
+      }
+    }
+  }
+}
