@@ -1,0 +1,18 @@
+@import "../styles/mixin.scss";
+@import "../styles/responsive.scss";
+$ziro: 0px;
+$max: 995px;
+.submit_cont_main {
+  width: 100%;
+  height: auto;
+  max-width: $max;
+  padding-top: 1rem;
+  margin: auto;
+  .sub_cont_main_div {
+    width: 95%;
+    margin: auto;
+    height: auto;
+    padding: 1.75rem;
+    border:1px solid #DDDDDD;
+  }
+}

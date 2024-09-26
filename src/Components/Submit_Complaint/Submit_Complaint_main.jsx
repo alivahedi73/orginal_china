@@ -1,5 +1,25 @@
+import Submit_Com_header from "./Submit_Com_header/Submit_Com_header";
+import Submit_com_report from "./Submit_com_report/Submit_com_report";
+import "./Submit_Complaint_main.scss";
+import TrendingPageNavbar from "./trendingPageNavbar/trendingPageNavbar";
 const Submit_Complaint_main = () => {
-    return ( <></> );
-}
- 
+  return (
+    <>
+      <div className="submit_cont_main">
+        {/* navBar */}
+        <TrendingPageNavbar />
+        {/* navBar */}
+        <div className="sub_cont_main_div">
+          {/* header */}
+          <Submit_Com_header />
+          {/* header */}
+          {/* submit report */}
+          <Submit_com_report />
+          {/* submit report */}
+        </div>
+      </div>
+    </>
+  );
+};
+
 export default Submit_Complaint_main;
