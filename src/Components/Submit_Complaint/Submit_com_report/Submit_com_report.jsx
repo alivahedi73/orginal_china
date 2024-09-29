@@ -3,7 +3,8 @@ import "./Submit_com_report.scss";
 import { submit_data_report } from "./data_Submit_com_report";
 import * as React from "react";
 import Modal from "@mui/material/Modal";
-
+import SigninComp from "./signinComp/signinComp";
+import CloseIcon from "@mui/icons-material/Close";
 const Submit_com_report = () => {
   let [click, setClick] = useState([false, false, ""]);
   const [open, setOpen] = React.useState(false);
@@ -109,13 +110,14 @@ const Submit_com_report = () => {
         </div>
         {/* button */}
         {/* button continue */}
-        {click[2] === "" ? (
-          <a className="continue_sub_disable">Continue</a>
-        ) : (
-          <a onClick={handel_page} className="continue_sub_enable">
-           Continue
-          </a>
-        )}
+        <a
+          className={`${
+            click[2] !== "" && "continue_sub_enable"
+          }  continue_sub_disable`}
+          onClick={click[2] !== "" && handel_page}
+        >
+          Continue
+        </a>
         {/* button continue */}
       </div>
       <Modal
@@ -124,7 +126,13 @@ const Submit_com_report = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <div className="ppppppp"></div>
+        <div className="sign____comp">
+          <div className="submit____close_modal">
+            <p>Sign In</p>
+            <CloseIcon fontSize="inherit" onClick={handleClose} />
+          </div>
+          <SigninComp />
+        </div>
       </Modal>
     </>
   );
