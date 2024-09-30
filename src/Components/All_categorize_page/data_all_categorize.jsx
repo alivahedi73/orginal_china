@@ -70,3 +70,65 @@ export const categorize_data = [
     textBlue: "More categorize",
   },
 ];
+export const data_categorizer_img = [
+  {
+    id: 1,
+    href: "#",
+    name: "Feed Processing Machinery",
+    src: "../../../public/assets/Image/all_categorize/num1.webp",
+  },
+  {
+    id: 2,
+    href: "#",
+    name: "Brick Making Machine",
+    src: "../../../public/assets/Image/all_categorize/num2.webp",
+  },
+  {
+    id: 3,
+    href: "#",
+    name: "Die Casting",
+    src: "../../../public/assets/Image/all_categorize/num3.webp",
+  },
+  {
+    id: 4,
+    href: "#",
+    name: "Beverage Processing Machinery",
+    src: "../../../public/assets/Image/all_categorize/num4.webp",
+  },
+  {
+    id: 5,
+    href: "#",
+    name: "Laser Cutting Machine",
+    src: "../../../public/assets/Image/all_categorize/num5.webp",
+  },
+  {
+    id: 6,
+    href: "#",
+    name: "Feed Processing Machinery",
+    src: "../../../public/assets/Image/all_categorize/num1.webp",
+  },
+  {
+    id: 7,
+    href: "#",
+    name: "Brick Making Machine",
+    src: "../../../public/assets/Image/all_categorize/num2.webp",
+  },
+  {
+    id: 8,
+    href: "#",
+    name: "Die Casting",
+    src: "../../../public/assets/Image/all_categorize/num3.webp",
+  },
+  {
+    id: 9,
+    href: "#",
+    name: "Beverage Processing Machinery",
+    src: "../../../public/assets/Image/all_categorize/num4.webp",
+  },
+  {
+    id: 10,
+    href: "#",
+    name: "Laser Cutting Machine",
+    src: "../../../public/assets/Image/all_categorize/num5.webp",
+  },
+];
