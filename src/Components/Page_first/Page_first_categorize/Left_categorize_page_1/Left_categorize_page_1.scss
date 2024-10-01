@@ -1,0 +1,43 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/responsive.scss";
+@import "../../../../styles/variables.scss";
+$ziro: 0px;
+.menu_cat {
+  width: 100%;
+  height: 100%;
+  .ti_cat {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+    padding-left: 15px;
+    &:hover {
+      .pCat {
+        color: red;
+      }
+      .linkCat {
+        color: red;
+      }
+    }
+    .pCat {
+      font-size: 1.563rem;
+      color: #5b5b5b;
+      margin-bottom: 0.4rem;
+    }
+    .linkCat {
+      font-size: 1.313rem;
+      transition: all;
+      text-decoration: none;
+      font-weight: 300;
+      color: black;
+      font-family: roboto-bold;
+    }
+  }
+  .Menu__catmain {
+    margin-bottom: 2px;
+    height: 85%;
+    padding-top: 10px;
+  }
+}
