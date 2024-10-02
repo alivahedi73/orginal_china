@@ -11,8 +11,6 @@ const Submenu_page_one_cat = ({ value }) => {
             <div className="mainC1" key={index}>
               <p className="mainC2">{item.name}</p>
               {item.submain?.map((items, index) => {
-                console.log(items);
-
                 return (
                   <a className="mainC3" href="#" key={index}>
                     {items.name}
@@ -20,8 +18,6 @@ const Submenu_page_one_cat = ({ value }) => {
                 );
               })}
               {item.link?.map((items, index) => {
-                console.log(items);
-
                 return (
                   <a className="mainC3" href="#" key={index}>
                     {items.name}

@@ -1,0 +1,104 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/responsive.scss";
+@import "../../../../styles/variables.scss";
+$ziro: 0px;
+.header_classification_cat_page {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  row-gap: 0.2rem;
+  .class_div_classification {
+    @include responsive($ziro) {
+      display: none;
+    }
+    @include responsive($laptop) {
+      width: 33.333%;
+      height: 50px;
+      justify-content: center;
+      border: none;
+      display: flex;
+    }
+
+    align-items: center;
+    .link_classification {
+      width: auto;
+      height: auto;
+      color: #222222;
+      @include responsive($tablet) {
+        font-size: 0.9rem;
+        text-align: left;
+      }
+      @include responsive($laptop) {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+      transition-duration: 300ms;
+      transition-property: all;
+      transition-timing-function: linear;
+      &:hover {
+        color: #e64545;
+      }
+    }
+  }
+  .class_div_classification_mobile {
+    width: 100%;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: linear;
+    @include responsive($ziro) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row wrap;
+      row-gap: 0.2rem;
+    }
+    @include responsive($laptop) {
+      display: none;
+    }
+    .class_div_classification_mobile_sub {
+      row-gap: 0.2rem;
+      @include responsive($ziro) {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        height: 35px;
+      }
+      @include responsive($tablet) {
+        display: flex;
+        justify-content: start;
+        width: 50%;
+        height: 35px;
+      }
+      @include responsive($laptop) {
+        display: none;
+      }
+
+      align-items: center;
+      .link_classification {
+        width: auto;
+        height: auto;
+        color: #222222;
+        @include responsive($tablet) {
+          font-size: 0.9rem;
+          text-align: left;
+        }
+        @include responsive($laptop) {
+          font-size: 1.1rem;
+          text-align: center;
+        }
+        transition-duration: 500ms;
+        transition-property: all;
+        transition-timing-function: linear;
+        &:hover {
+          color: #e64545;
+        }
+      }
+    }
+  }
+}

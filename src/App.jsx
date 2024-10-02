@@ -14,8 +14,8 @@ const App = () => {
       {/* <Help_Suppliers /> */}
       {/* <Help_Trading /> */}
       {/* <Submit_Complaint /> */}
-      {/* <All_categorize_page /> */}
-      <Page_first_categorize_main />
+      <All_categorize_page />
+      {/* <Page_first_categorize_main /> */}
     </>
   );
 };

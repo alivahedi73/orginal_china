@@ -3,9 +3,7 @@ import "./MoreCategorize_one_page.scss";
 import Submenu_page_one_cat from "../Submenu_page_one_cat/Submenu_page_one_cat";
 const MoreCategorize_one_page = ({ value }) => {
   let [click, setClick] = useState(1);
-  const data1 = value.filter((value) => value.id === click);
-console.log(data1[0]);
- 
+  const data1 = value.filter((value) => value.id === click); 
   return (
     <div className="cat_p1">
       <div className="cat_p2">

@@ -1,0 +1,24 @@
+@import "../../../../../styles/mixins.scss";
+@import "../../../../../styles/responsive.scss";
+@import "../../../../../styles/variables.scss";
+$ziro: 0px;
+.menu_card_components{
+    width: 100%;
+    height: 645px;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    border: 0.25px solid #5b5b5b4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .menu_bar_components{
+        width: 20%;
+        height: 100%;
+        background-color: red;
+    }
+    .side_card_components{
+        width: 80%;
+        height: 100%;
+        background-color: blue;
+    }
+}

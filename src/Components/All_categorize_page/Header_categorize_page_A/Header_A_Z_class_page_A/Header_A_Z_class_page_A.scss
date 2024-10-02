@@ -1,0 +1,52 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/responsive.scss";
+@import "../../../../styles/variables.scss";
+$ziro: 0px;
+.header_A_Z_title {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  row-gap: 0.75rem;
+  margin: auto;
+  padding-bottom: 1rem;
+  .h1_A_Z{
+    width: 100%;
+    font-size: 1.125rem;
+    color: #222222;
+    font-family: roboto-bold;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .link_div_A_Z_A {
+    @include responsive($ziro){
+        width: 100%;
+        height: auto;
+    }
+    @include responsive($tablet){
+        width: 50%;
+        height: auto;
+    }
+    @include responsive($laptop){
+        width: 33.33%;
+        height: auto;
+    }
+    .link_A_Z_A {
+        width: max-content;
+        height: auto;
+        font-size: 0.75rem;
+        line-height: 1.313rem;
+        color: #222222;
+        transition-duration: 300ms;
+        transition-property: all;
+        transition-timing-function: linear;
+        font-family: Arial, Helvetica, sans-serif;
+        &:hover{
+            color: #E64545;
+        }
+    }
+  }
+}
