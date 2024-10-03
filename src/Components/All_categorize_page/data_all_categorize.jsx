@@ -394,6 +394,7 @@ export const Card_sl_menu = [
         id: 1,
         name: "Agricultural Machinery",
         href: "#",
+        has_sub: true,
         submenu: [
           {
             id: 1,
@@ -521,6 +522,7 @@ export const Card_sl_menu = [
         id: 2,
         name: "Commidity Making Machine",
         href: "#",
+        has_sub: true,
         submenu: [
           {
             id: 1,
@@ -544,6 +546,165 @@ export const Card_sl_menu = [
           },
         ],
       },
+      {
+        id: 3,
+        name: "Crane",
+        has_sub: true,
+        href: "#",
+        submenu: [
+          {
+            id: 1,
+            name: "Baler",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: "Baler",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Baler",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Baler",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "3D Scanner",
+        href: "#",
+        
+      },
+      {
+        id: 5,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      {
+        id: 6,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 7,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 8,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 9,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 10,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 11,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 12,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 13,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 14,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 15,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
     ],
+  },
+];
+export const data_card_menu_left_num1 = [
+  {
+    id: 1,
+    name: "Milling Machinery",
+    src: "../../../public/assets/Image/all_categorize/ps1.webp",
+    href: "#",
+  },
+  {
+    id: 2,
+    name: "Grain Processing",
+    src: "../../../public/assets/Image/all_categorize/ps2.webp",
+    href: "#",
+  },
+  {
+    id: 3,
+    name: "Grain Processing",
+    src: "../../../public/assets/Image/all_categorize/ps1.webp",
+    href: "#",
+  },
+  {
+    id: 4,
+    name: "Grain Processing",
+    src: "../../../public/assets/Image/all_categorize/ps1.webp",
+    href: "#",
+  },
+  {
+    id: 5,
+    name: "Grain Processing",
+    src: "../../../public/assets/Image/all_categorize/ps1.webp",
+    href: "#",
+  },
+  {
+    id: 6,
+    name: "Grain Processing",
+    src: "../../../public/assets/Image/all_categorize/ps1.webp",
+    href: "#",
+  },
+  {
+    id: 7,
+    name: "Grain Processing",
+    src: "../../../public/assets/Image/all_categorize/ps1.webp",
+    href: "#",
+  },
+  {
+    id: 8,
+    name: "Grain Processing",
+    src: "../../../public/assets/Image/all_categorize/ps1.webp",
+    href: "#",
   },
 ];
