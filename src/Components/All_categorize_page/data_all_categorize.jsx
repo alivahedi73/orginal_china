@@ -578,7 +578,6 @@ export const Card_sl_menu = [
         id: 4,
         name: "3D Scanner",
         href: "#",
-        
       },
       {
         id: 5,
@@ -706,5 +705,1103 @@ export const data_card_menu_left_num1 = [
     name: "Grain Processing",
     src: "../../../public/assets/Image/all_categorize/ps1.webp",
     href: "#",
+  },
+];
+export const data_left_menu_bar_brown = [
+  {
+    id: 1,
+    name: "Apparel & Textile Machinery",
+    submenu: [
+      {
+        id: 1,
+        name: "Machinery for Garment, Shoes & Accessories",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: "Button Making Machine",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: "Dry Washer",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Button Making Machine",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Dry Washer",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Button Making Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Dry Washer",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Textile Machine & Parts",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Needle Detector",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Needle Detector",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Leathery Machine",
+        href: "#",
+        has_sub: false,
+      },
+    ],
+  },
+];
+export const card_brown_data_right_bar = [
+  {
+    id: 1,
+    name: "High Speed Machine",
+    src: "../../../public/assets/Image/all_categorize/ps3.webp",
+    href: "#",
+  },
+  {
+    id: 2,
+    name: "High Speed Machine",
+    src: "../../../public/assets/Image/all_categorize/ps3.webp",
+    href: "#",
+  },
+  {
+    id: 3,
+    name: "High Speed Machine",
+    src: "../../../public/assets/Image/all_categorize/ps3.webp",
+    href: "#",
+  },
+  {
+    id: 4,
+    name: "High Speed Machine",
+    src: "../../../public/assets/Image/all_categorize/ps3.webp",
+    href: "#",
+  },
+  {
+    id: 5,
+    name: "High Speed Machine",
+    src: "../../../public/assets/Image/all_categorize/ps3.webp",
+    href: "#",
+  },
+  {
+    id: 6,
+    name: "High Speed Machine",
+    src: "../../../public/assets/Image/all_categorize/ps3.webp",
+    href: "#",
+  },
+  {
+    id: 7,
+    name: "High Speed Machine",
+    src: "../../../public/assets/Image/all_categorize/ps3.webp",
+    href: "#",
+  },
+  {
+    id: 8,
+    name: "High Speed Machine",
+    src: "../../../public/assets/Image/all_categorize/ps3.webp",
+    href: "#",
+  },
+];
+export const data_left_menu_bar_green = [
+  {
+    id: 1,
+    name: "Chemical & Pharmaceutical Machinery",
+    submenu: [
+      {
+        id: 1,
+        name: "Chemical & Pharmaceutical Machinery",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Pharmaceutical",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Dry Washer",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Button Making Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Dry Washer",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Pharmaceutical Machinery",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Needle Detector",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Needle Detector",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Lubricating Equipment",
+        href: "#",
+        has_sub: false,
+      },
+    ],
+  },
+];
+export const data_left_menu_bar_yellow = [
+  {
+    id: 1,
+    name: "Engineering & Construction Machinery",
+    submenu: [
+      {
+        id: 1,
+        name: "Chemical & Construction Machinery",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Pharmaceutical",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Dry Washer",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Button Making Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Dry Washer",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Machinery",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Needle Detector",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Needle Detector",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Lubricating Equipment",
+        href: "#",
+        has_sub: false,
+      },
+    ],
+  },
+];
+export const data_left_menu_bar_b_BRown = [
+  {
+    id: 1,
+    name: "Metal, Woodworking & Stone Processing Machinery",
+    submenu: [
+      {
+        id: 1,
+        name: "Chemical & Construction Machinery",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Pharmaceutical",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Dry Washer",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Button Making Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Dry Washer",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Machinery",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Needle Detector",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Needle Detector",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Lubricating Equipment",
+        href: "#",
+        has_sub: false,
+      },
+    ],
+  },
+];
+export const data_left_menu_bar_b_sabaz = [
+  {
+    id: 1,
+    name: "Mining & Metallurgy Machinery",
+    submenu: [
+      {
+        id: 1,
+        name: "Chemical & Construction Machinery",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Pharmaceutical",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Dry Washer",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Button Making Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Dry Washer",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Machinery",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Needle Detector",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Needle Detector",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Lubricating Equipment",
+        href: "#",
+        has_sub: false,
+      },
+    ],
+  },
+];
+export const data_left_menu_bar_b_palstic = [
+  {
+    id: 1,
+    name: "Plastic & Rubber Machinery",
+    submenu: [
+      {
+        id: 1,
+        name: "Chemical & Construction Machinery",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Pharmaceutical",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Dry Washer",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Button Making Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Dry Washer",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Machinery",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Needle Detector",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Needle Detector",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Lubricating Equipment",
+        href: "#",
+        has_sub: false,
+      },
+    ],
+  },
+];
+export const data_left_menu_bar_b_phili = [
+  {
+    id: 1,
+    name: "Paper, Glass & Ceramics Machinery",
+    submenu: [
+      {
+        id: 1,
+        name: "Chemical & Construction Machinery",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Pharmaceutical",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Dry Washer",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Button Making Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Dry Washer",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Machinery",
+        href: "#",
+        has_sub: false,
+      },
+      {
+        id: 3,
+        name: "Lubricating Equipment",
+        href: "#",
+        has_sub: false,
+      },
+      {
+        id: 4,
+        name: "Machinery",
+        href: "#",
+        has_sub: false,
+      },
+      {
+        id: 5,
+        name: "Lubricating Equipment",
+        href: "#",
+        has_sub: false,
+      },
+    ],
+  },
+];
+export const data_left_menu_bar_b_p1 = [
+  {
+    id: 1,
+    name: "Packaging & Printing Machinery",
+    submenu: [
+      {
+        id: 1,
+        name: "Chemical & Construction Machinery",
+        href: "#",
+        has_sub: false,
+      },
+      {
+        id: 2,
+        name: "Machinery",
+        href: "#",
+        has_sub: false,
+      },
+      {
+        id: 3,
+        name: "Lubricating Equipment",
+        href: "#",
+        has_sub: false,
+      },
+      {
+        id: 4,
+        name: "Machinery",
+        href: "#",
+        has_sub: false,
+      },
+      {
+        id: 5,
+        name: "Lubricating Equipment",
+        href: "#",
+        has_sub: false,
+      },
+    ],
+  },
+];
+export const data_left_menu_bar_b_sabaz___1 = [
+  {
+    id: 1,
+    name: "Mining & Metallurgy Machinery",
+    submenu: [
+      {
+        id: 1,
+        name: "Chemical & Construction Machinery",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: " Machinery",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Pharmaceutical",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Dry Washer",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Button Making Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Dry Washer",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Machinery",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Needle Detector",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Chemical Fiber Machine",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Net Machine",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Needle Detector",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Lubricating Equipment",
+        href: "#",
+        has_sub: false,
+      },
+    ],
+  },
+];
+export const Card_sl_menu_1 = [
+  {
+    id: 1,
+    name: "General Machinery & Tools",
+    submenu: [
+      {
+        id: 1,
+        name: "Feeder",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: "Agricultural Machine",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: "Agricultar Mower",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Baler",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Agricultural Machine",
+            href: "#",
+          },
+          {
+            id: 5,
+            name: "Agricultar Mower",
+            href: "#",
+          },
+          {
+            id: 6,
+            name: "Baler",
+            href: "#",
+          },
+          {
+            id: 7,
+            name: "Agricultural Machine",
+            href: "#",
+          },
+          {
+            id: 8,
+            name: "Agricultar Mower",
+            href: "#",
+          },
+          {
+            id: 9,
+            name: "Baler",
+            href: "#",
+          },
+          {
+            id: 10,
+            name: "Agricultural Machine",
+            href: "#",
+          },
+          {
+            id: 11,
+            name: "Agricultar Mower",
+            href: "#",
+          },
+          {
+            id: 12,
+            name: "Baler",
+            href: "#",
+          },
+          {
+            id: 13,
+            name: "Agricultural Machine",
+            href: "#",
+          },
+          {
+            id: 14,
+            name: "Agricultar Mower",
+            href: "#",
+          },
+          {
+            id: 15,
+            name: "Baler",
+            href: "#",
+          },
+          {
+            id: 16,
+            name: "Agricultural Machine",
+            href: "#",
+          },
+          {
+            id: 17,
+            name: "Agricultar Mower",
+            href: "#",
+          },
+          {
+            id: 18,
+            name: "Baler",
+            href: "#",
+          },
+          {
+            id: 19,
+            name: "Agricultural Machine",
+            href: "#",
+          },
+          {
+            id: 20,
+            name: "Agricultar Mower",
+            href: "#",
+          },
+          {
+            id: 21,
+            name: "Baler",
+            href: "#",
+          },
+          {
+            id: 21,
+            name: "Agricultural Machine",
+            href: "#",
+          },
+          {
+            id: 22,
+            name: "Agricultar Mower",
+            href: "#",
+          },
+          {
+            id: 23,
+            name: "Baler",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 2,
+        name: "Commidity Making Machine",
+        href: "#",
+        has_sub: true,
+        submenu: [
+          {
+            id: 1,
+            name: "Busher Making Machine",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: "Busher Making Machine",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Busher Making Machine",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Busher Making Machine",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 3,
+        name: "Crane",
+        has_sub: true,
+        href: "#",
+        submenu: [
+          {
+            id: 1,
+            name: "Baler",
+            href: "#",
+          },
+          {
+            id: 2,
+            name: "Baler",
+            href: "#",
+          },
+          {
+            id: 3,
+            name: "Baler",
+            href: "#",
+          },
+          {
+            id: 4,
+            name: "Baler",
+            href: "#",
+          },
+        ],
+      },
+      {
+        id: 4,
+        name: "3D Scanner",
+        href: "#",
+      },
+      {
+        id: 5,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      {
+        id: 6,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 7,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 8,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 9,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 10,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 11,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 12,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 13,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 14,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+      ,
+      {
+        id: 15,
+        name: "3D Scanner",
+        href: "#",
+        has_sub: false,
+      },
+    ],
+  },
+];
+export const data_left_menu_bar_b_p2 = [
+  {
+    id: 1,
+    name: "Other Machinery",
+    submenu: [
+      {
+        id: 1,
+        name: "Chemical & Construction Machinery",
+        href: "#",
+        has_sub: false,
+      },
+      {
+        id: 2,
+        name: "Machinery",
+        href: "#",
+        has_sub: false,
+      },
+      {
+        id: 3,
+        name: "Lubricating Equipment",
+        href: "#",
+        has_sub: false,
+      },
+      {
+        id: 4,
+        name: "Machinery",
+        href: "#",
+        has_sub: false,
+      },
+      {
+        id: 5,
+        name: "Lubricating Equipment",
+        href: "#",
+        has_sub: false,
+      },
+    ],
   },
 ];

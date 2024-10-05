@@ -26,16 +26,19 @@ $ziro: 0px;
   }
   .submenu_left_side_menu {
     width: 100%;
-    height: calc(100% - 35px);
+    height: calc(100% - 61px);
     padding-top: 1.5rem;
     position: relative;
     .div__submenu_left_side {
         width: 100%;
-        height: 45px;
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom:1rem;
         padding-left: 0.5rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-flow: row wrap;
         transition-duration: 300ms;
         transition-property: all;
         transition-timing-function: linear;
@@ -72,6 +75,17 @@ $ziro: 0px;
                     color: #E64545;
                 }
             }
+        }
+        .absd_link_show_menu{
+          width: 100%;
+          height: 40px;
+          overflow: hidden;
+          padding-left: 0.5rem;
+          padding-right: 1rem;
+          a{
+            font-size: 0.7rem;
+            padding-right: 0.3rem;
+          }
         }
         .div_link_submenu_left_side{
             width: max-content;

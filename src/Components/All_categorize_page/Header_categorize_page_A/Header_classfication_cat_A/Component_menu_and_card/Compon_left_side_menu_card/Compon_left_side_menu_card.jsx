@@ -1,20 +1,17 @@
 import "./Compon_left_side_menu_card.scss";
-import { Card_sl_menu } from "../../../../data_all_categorize";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { useState } from "react";
-const Compon_left_side_menu_card = () => {
+
+const Compon_left_side_menu_card = ({ rang, data }) => {
   const [hover, setHover] = useState([false, 0]);
-  const result = Card_sl_menu[0].submenu.slice(0, 11);
-  const result1 = Card_sl_menu[0].submenu.slice(
-    12,
-    Card_sl_menu[0].submenu.length
-  );
-  let green = "#77A619";  
+  const result = data[0].submenu.slice(0, 11);
+  const result1 = data[0].submenu.slice(12, data[0].submenu.length);
+
   return (
     <>
       <div className="com_left_side_menu___A">
-        <div className="title_com_left_side_menu" style={{ color: green }}>
-          {Card_sl_menu[0].name}
+        <div className="title_com_left_side_menu" style={{ color: rang }}>
+          {data[0].name}
         </div>
         <div className="submenu_left_side_menu">
           {result.map((item, index) => {
@@ -24,8 +21,8 @@ const Compon_left_side_menu_card = () => {
                 className="div__submenu_left_side"
                 style={{
                   backgroundColor:
-                    hover[0] && hover[1] == item.id ? green : "white",
-                  color: hover[0] && hover[1] == item.id ? "white" : green,
+                    hover[0] && hover[1] == item.id ? rang : "white",
+                  color: hover[0] && hover[1] == item.id ? "white" : rang,
                 }}
                 onMouseEnter={() => setHover([true, item.id])}
                 onMouseLeave={() => setHover([false, item.id])}
@@ -34,12 +31,31 @@ const Compon_left_side_menu_card = () => {
                   href={item.href}
                   className="div_link_submenu_left_side"
                   style={{
-                    color: hover[0] && hover[1] == item.id ? "white" : green,
+                    color: hover[0] && hover[1] == item.id ? "white" : rang,
                   }}
                 >
                   {item.name}
                 </a>
+
                 {item.has_sub == true && <ChevronRightIcon />}
+                {data[0].submenu.length < 7 && item.has_sub == true && (
+                  <div className="absd_link_show_menu">
+                    {item.submenu.map((items, index) => {
+                      return (
+                        <a
+                          href={items.href}
+                          key={index}
+                          style={{
+                            color:
+                              hover[0] && hover[1] == item.id ? "white" : "#555555",
+                          }}
+                        >
+                          {items.name} /
+                        </a>
+                      );
+                    })}
+                  </div>
+                )}
                 {item.has_sub == true && (
                   <div
                     className="abs_div_menu_card_left__side"
@@ -67,13 +83,13 @@ const Compon_left_side_menu_card = () => {
               </div>
             );
           })}
-          {Card_sl_menu[0].submenu.length >= 12 && (
+          {data[0].submenu.length >= 12 && (
             <>
               <div
                 className="div__submenu_left_side"
                 style={{
-                  backgroundColor: hover[0] && hover[1] == 12 ? green : "white",
-                  color: hover[0] && hover[1] == 12 ? "white" : green,
+                  backgroundColor: hover[0] && hover[1] == 12 ? rang : "white",
+                  color: hover[0] && hover[1] == 12 ? "white" : rang,
                 }}
                 onMouseEnter={() => setHover([true, 12])}
                 onMouseLeave={() => setHover([false, 12])}
@@ -81,7 +97,7 @@ const Compon_left_side_menu_card = () => {
                 <a
                   className="div_link_submenu_left_side"
                   style={{
-                    color: hover[0] && hover[1] == 12 ? "white" : green,
+                    color: hover[0] && hover[1] == 12 ? "white" : rang,
                   }}
                 >
                   More
@@ -102,7 +118,7 @@ const Compon_left_side_menu_card = () => {
                         className="abs_div_menu_card_left__side_link"
                         key={index}
                         href={items.href}
-                        style={{ color: hover[0] && hover[1] == 12 && "white"}}
+                        style={{ color: hover[0] && hover[1] == 12 && "white" }}
                       >
                         {items.name}
                       </a>

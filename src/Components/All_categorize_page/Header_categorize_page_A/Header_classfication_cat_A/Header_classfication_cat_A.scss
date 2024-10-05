@@ -101,4 +101,54 @@ $ziro: 0px;
       }
     }
   }
+  .bottom_header_classification_about_page {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: start;
+    flex-flow: row wrap;
+    align-items: center;
+    column-gap: 0.5rem;
+    div {
+      display: block;
+      width: 100%;
+      column-gap: 0.5rem;
+      font-size: 0.875rem;
+      color: #222222;
+      text-align: justify;
+      word-spacing: -0.1rem;
+      p {
+        font-size: 0.875rem;
+        color: #555555;
+      }
+      a {
+        font-size: 0.875rem;
+        color: rgb(85, 85, 241);
+        transition-duration: 300ms;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        word-spacing: -0.1rem;
+        &:hover {
+          color: #e64545;
+        }
+      }
+    }
+    p {
+      font-size: 0.875rem;
+      color: #555555;
+    }
+    a {
+      font-size: 0.875rem;
+      color: rgb(85, 85, 241);
+      transition-duration: 300ms;
+      transition-property: all;
+      transition-timing-function: ease-in-out;
+      &:hover {
+        color: #e64545;
+      }
+    }
+  }
 }
