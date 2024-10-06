@@ -1,6 +1,6 @@
 import "./Main_Product.scss";
 import Slider_Product from "./Slider_Product/Slider_Product";
-import "../../styles/index.scss";
+import "../../../styles/index.scss";
 import Right_Product from "./Right_Product/Right_Product";
 import Section2_product from "./Section2_product/Section2_product";
 import Section3_Product from "./Section3_Product/Section3_Product";

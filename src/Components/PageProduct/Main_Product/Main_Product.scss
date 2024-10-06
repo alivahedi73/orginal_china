@@ -1,5 +1,6 @@
-@import "../../styles/mixin.scss";
-@import "../../styles/responsive.scss";
+@import "../../../styles/mixins.scss";
+@import "../../../styles/responsive.scss";
+@import "../../../styles/variables.scss";
 $ziro: 0px;
 .main_product {
   width: 100%;
@@ -178,46 +179,46 @@ $ziro: 0px;
     }
   }
 }
-.product_group_main{
+.product_group_main {
   width: 100%;
   height: auto;
   max-width: 1750px;
   margin: auto;
 }
-.footter___product{
+.footter___product {
   width: 100%;
   height: auto;
-  background-color: #E3E4E6;
+  background-color: #e3e4e6;
 }
-.blank{
-  @include responsive($ziro){
+.blank {
+  @include responsive($ziro) {
     width: 100%;
     height: 45px;
     display: block;
   }
-  @include responsive($tablet){
+  @include responsive($tablet) {
     width: 100%;
     height: 50px;
     display: block;
   }
-  @include responsive($laptop){
+  @include responsive($laptop) {
     width: 0;
     height: 0;
     display: none;
   }
 }
-.mobile_fix_connect{
-  @include responsive($ziro){
+.mobile_fix_connect {
+  @include responsive($ziro) {
     width: 100%;
     height: 45px;
     display: flex;
   }
-  @include responsive($tablet){
+  @include responsive($tablet) {
     width: 100%;
     height: 50px;
     display: flex;
   }
-  @include responsive($laptop){
+  @include responsive($laptop) {
     width: 0;
     height: 0;
     display: none;
@@ -232,7 +233,7 @@ $ziro: 0px;
   padding-left: 2px;
   padding-right: 2px;
   background-color: whitesmoke;
-  .button_fix{
+  .button_fix {
     background-color: rgb(232, 72, 72);
     flex-grow: 3;
     height: 35px;
@@ -241,29 +242,29 @@ $ziro: 0px;
     line-height: 35px;
     font-family: roboto-bold;
     color: whitesmoke;
-    font-size: clamp(12px,2vw,16px);
+    font-size: clamp(12px, 2vw, 16px);
   }
-  .mobile_1{
+  .mobile_1 {
     display: block;
     flex-grow: 1;
     height: 100%;
-    div{
+    div {
       width: 100%;
       height: 100%;
       display: flex;
       flex-flow: column wrap;
       justify-content: space-evenly;
       align-items: center;
-      div{
+      div {
         width: 100%;
         height: max-content;
-        svg{
-          font-size: clamp(16px,2vw,30px);
+        svg {
+          font-size: clamp(16px, 2vw, 30px);
           color: #2b2b2b;
         }
       }
-      span{
-        font-size: clamp(8px,2vw,14px);
+      span {
+        font-size: clamp(8px, 2vw, 14px);
         color: #2b2b2b;
       }
     }

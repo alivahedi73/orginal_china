@@ -3,13 +3,14 @@ import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import { useState } from "react";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-const Menu_bar_components_mobile = ({ data }) => {
+const Menu_bar_components_mobile = ({ data,id }) => {
   let [click, setClick] = useState(false);
   let [cli, setCli] = useState([true, 1]);
   return (
     <>
       <div
         className="title_bar_mobile"
+        id={id}
         style={
           click
             ? { backgroundColor: "#5b5b5b", color: "whitesmoke" }
@@ -19,7 +20,6 @@ const Menu_bar_components_mobile = ({ data }) => {
       >
         {click ? <MenuOpenIcon /> : <MenuIcon />}
         {data[0].name}
-        <a href="#test">test</a>
       </div>
       {/* drawer */}
       <div
@@ -27,12 +27,12 @@ const Menu_bar_components_mobile = ({ data }) => {
         style={
           click
             ? {
-                opacity: "1",
                 transform: "scale(1)",
+                display: "flex",
               }
             : {
-                opacity: "0",
                 transform: "scale(0)",
+                display: "none",
               }
         }
       >

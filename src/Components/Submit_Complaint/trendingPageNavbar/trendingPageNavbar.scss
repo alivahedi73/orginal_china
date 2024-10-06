@@ -1,6 +1,6 @@
-@use "../../styles/varaiable.scss" as *;
-@use "../../styles/mixin.scss" as *;
-@use "../../styles/responsive.scss" as *;
+@import "../../../styles/mixins.scss";
+@import "../../../styles/responsive.scss";
+@import "../../../styles/variables.scss";
 .navbar {
   padding: 8px;
   display: flex;

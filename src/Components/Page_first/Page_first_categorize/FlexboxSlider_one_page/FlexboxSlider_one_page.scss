@@ -1,7 +1,7 @@
 @import "../../../../styles/mixins.scss";
 @import "../../../../styles/responsive.scss";
 @import "../../../../styles/variables.scss";
-$hich:0px;
+$hich: 0px;
 @keyframes animation {
   0% {
     transform: translateX(0);
@@ -63,7 +63,7 @@ $hich:0px;
         font-size: 20px;
       }
     }
-     @include responsive($tablet) {
+    @include responsive($tablet) {
       width: 180px;
       height: 100px;
       img {
@@ -190,50 +190,50 @@ $hich:0px;
     @include responsive($hich) {
       width: 100px;
       height: 50px;
-      .s2P{
+      .s2P {
         font-size: 8px;
       }
-      .sp_hover{
+      .sp_hover {
         font-size: 12px;
       }
     }
     @include responsive($mobile) {
       width: 100px;
       height: 90px;
-      .s2P{
+      .s2P {
         font-size: 9px;
       }
-      .sp_hover{
+      .sp_hover {
         font-size: 15px;
       }
     }
     @include responsive($tablet) {
       width: 150px;
       height: 100px;
-      .s2P{
+      .s2P {
         font-size: 12px;
       }
-      .sp_hover{
+      .sp_hover {
         font-size: 25px;
       }
     }
     @include responsive($laptop) {
       width: 180px;
       height: 110px;
-      .s2P{
+      .s2P {
         font-size: 14px;
       }
-      .sp_hover{
+      .sp_hover {
         font-size: 25px;
       }
     }
     @include responsive($desktop) {
       width: 190px;
       height: 123px;
-      .s2P{
+      .s2P {
         font-size: 14px;
       }
-      .sp_hover{
+      .sp_hover {
         font-size: 30px;
       }
     }

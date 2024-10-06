@@ -24,7 +24,7 @@ const Header_classfication_cat_A = (cl) => {
         {data_all_cate.map((item, index) => {
           return (
             <div className="class_div_classification" key={index}>
-              <a href={item.href} className="link_classification">
+              <a href={`#item_${item.id}`} className="link_classification">
                 {item.name}
               </a>
             </div>
@@ -62,62 +62,74 @@ const Header_classfication_cat_A = (cl) => {
         )}
         {/* start component card and menu */}
         <Component_menu_and_card
+          id={1}
           rang={"#77A619"}
           data_right={data_card_menu_left_num1}
           data_left={Card_sl_menu}
         />
         {/* start component card and menu */}
         <Component_menu_and_card
+          id={2}
           rang={"#99793D"}
           data_left={data_left_menu_bar_brown}
           data_right={card_brown_data_right_bar}
         />
         <Component_menu_and_card
+          id={3}
           rang={"#42A685"}
           data_left={data_left_menu_bar_green}
           data_right={card_brown_data_right_bar}
         />
         <Component_menu_and_card
+          id={4}
           rang={"#E8A422"}
           data_left={data_left_menu_bar_yellow}
           data_right={card_brown_data_right_bar}
         />
         <Component_menu_and_card
+          id={5}
           rang={"#B37950"}
           data_left={data_left_menu_bar_b_BRown}
           data_right={card_brown_data_right_bar}
         />
         <Component_menu_and_card
+          id={6}
           rang={"#3EB3B3"}
           data_left={data_left_menu_bar_b_sabaz}
           data_right={card_brown_data_right_bar}
         />
         <Component_menu_and_card
+          id={7}
           rang={"#E6742E"}
           data_left={data_left_menu_bar_b_palstic}
           data_right={card_brown_data_right_bar}
         />
         <Component_menu_and_card
+          id={8}
           rang={"#39E9BF"}
           data_left={data_left_menu_bar_b_phili}
           data_right={card_brown_data_right_bar}
         />
         <Component_menu_and_card
+          id={9}
           rang={"#5081B3"}
           data_left={data_left_menu_bar_b_p1}
           data_right={card_brown_data_right_bar}
         />
         <Component_menu_and_card
+          id={10}
           rang={"#59B361"}
           data_left={data_left_menu_bar_b_sabaz___1}
           data_right={card_brown_data_right_bar}
         />
         <Component_menu_and_card
+          id={11}
           rang={"#397CBF"}
           data_right={data_card_menu_left_num1}
           data_left={Card_sl_menu_1}
         />
         <Component_menu_and_card
+          id={12}
           rang={"#999999"}
           data_right={data_card_menu_left_num1}
           data_left={data_left_menu_bar_b_p2}

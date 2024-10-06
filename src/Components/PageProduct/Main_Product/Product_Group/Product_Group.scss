@@ -1,5 +1,6 @@
-@import "../../../styles/mixin.scss";
-@import "../../../styles/responsive.scss";
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/responsive.scss";
+@import "../../../../styles/variables.scss";
 $ziro: 0px;
 .Product_group_main {
   @include responsive($ziro) {

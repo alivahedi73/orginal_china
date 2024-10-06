@@ -3,7 +3,6 @@ import { categorize_data } from "../../data_all_categorize";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import { useState } from "react";
-import { Drawer } from "@mui/material";
 const All_categorize__mobile_menu = () => {
   let [click, setClick] = useState(false);
   let [clicksub, setClicksub] = useState(1);
@@ -18,7 +17,11 @@ const All_categorize__mobile_menu = () => {
         }
         onClick={() => setClick(!click)}
       >
-        {click ? <MenuOpenIcon style={{ color: "black" }} /> : <MenuIcon style={{color:"#888888"}}/>}
+        {click ? (
+          <MenuOpenIcon style={{ color: "black" }} />
+        ) : (
+          <MenuIcon style={{ color: "#888888" }} />
+        )}
         <h2
           className="h2_main_categorize_mobile"
           style={click ? { color: "black" } : { color: "#888888" }}
@@ -30,11 +33,18 @@ const All_categorize__mobile_menu = () => {
         className="abs_mobile_cat_main"
         style={
           click
-            ? {  opacity: "1" }
-            : { opacity: "0" }
+            ? { height: "100%", transition: " height 0.3s ease-in-out" }
+            : { height: "0", transition: " height 0.8s ease-in-out 0.3" }
         }
       >
-        <div className="main_mobile">
+        <div
+          className="main_mobile"
+          style={
+            click
+              ? { opacity: "1", transition: "opacity 0.1s linear" }
+              : { opacity: "0", transition: "opacity 0.8s linear" }
+          }
+        >
           {categorize_data[0].mainDiv.map((item, index) => {
             return (
               <div className="item_abs_mobile_main" key={index}>
@@ -57,7 +67,14 @@ const All_categorize__mobile_menu = () => {
             );
           })}
         </div>
-        <div className="categorize_menu_abs_datail_main">
+        <div
+          className="categorize_menu_abs_datail_main"
+          style={
+            click
+              ? { opacity: "1", transition: "opacity 0.1s linear" }
+              : { opacity: "0", transition: "opacity 0.8s linear" }
+          }
+        >
           {categorize_data[0].mainDiv[clicksub - 1].submain.map(
             (item, index) => {
               return (

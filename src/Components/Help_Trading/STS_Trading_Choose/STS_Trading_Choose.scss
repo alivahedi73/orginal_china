@@ -1,5 +1,5 @@
-@import "../../styles/mixin.scss";
-@import "../../styles/responsive.scss";
+@import "../../../styles/mixins.scss";
+@import "../../../styles/responsive.scss";
 $ziro: 0px;
 $max: 1400px;
 .sts_main {
@@ -30,20 +30,20 @@ $max: 1400px;
       align-items: center;
       row-gap: 20px;
       .sts_f {
-        @include responsive($ziro){
-            width: 90%;
+        @include responsive($ziro) {
+          width: 90%;
         }
-        @include responsive(429px){
-            width: 80%;
+        @include responsive(429px) {
+          width: 80%;
         }
-         @include responsive(623px){
-            width: 70%;
+        @include responsive(623px) {
+          width: 70%;
         }
-        @include responsive($tablet){
-            width: 45%;
+        @include responsive($tablet) {
+          width: 45%;
         }
-         @include responsive($laptop){
-            width: 30%;
+        @include responsive($laptop) {
+          width: 30%;
         }
         height: 350px;
         background-color: white;

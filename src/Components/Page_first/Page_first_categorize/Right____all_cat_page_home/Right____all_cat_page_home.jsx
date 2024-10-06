@@ -1,18 +1,8 @@
-import { useEffect, useState } from "react";
-import "./Right.scss";
+import "./Right____all_cat_page_home.scss";
 import { TbTargetArrow } from "react-icons/tb";
-const Right = () => {
-  let [rcat, setRcat] = useState([]);
-  let fetchRightCat = async () => {
-    try {
-      let data = await fetch("http://localhost:8000/right");
-      let res = await data.json();
-      setRcat(res);
-    } catch (error) {}
-  };
-  useEffect(() => {
-    fetchRightCat();
-  }, []);
+import { right } from "../data_Page_first_categorize";
+const Right____all_cat_page_home = () => {
+  let rcat = right;
   return (
     <>
       <div className="main_right">
@@ -45,4 +35,4 @@ const Right = () => {
   );
 };
 
-export default Right;
+export default Right____all_cat_page_home;

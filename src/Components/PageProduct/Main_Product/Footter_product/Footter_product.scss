@@ -1,5 +1,6 @@
-@import "../../../styles/mixin.scss";
-@import "../../../styles/responsive.scss";
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/responsive.scss";
+@import "../../../../styles/variables.scss";
 $ziro: 0px;
 .Footer___main {
   width: 100%;
@@ -142,17 +143,17 @@ $ziro: 0px;
         color: #5b5b5b;
         font-size: clamp(10px, 2vw, 16px);
       }
-       a {
-      display: block;
-      color: #5b5b5b;
-      font-size: clamp(10px, 2vw, 16px);
-      transition-timing-function: linear;
-      transition-property: all;
-      transition-duration: 300ms;
-      &:hover {
-        color: red;
+      a {
+        display: block;
+        color: #5b5b5b;
+        font-size: clamp(10px, 2vw, 16px);
+        transition-timing-function: linear;
+        transition-property: all;
+        transition-duration: 300ms;
+        &:hover {
+          color: red;
+        }
       }
-    }
     }
   }
 }

@@ -2,44 +2,44 @@
 @import "../../../styles/responsive.scss";
 @import "../../../styles/variables.scss";
 $ziro: 0px;
-.submit_addressbar{
-    width: 95%;
-    margin: auto;
-    height: auto;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    border-top: 5px solid red;
-    padding-top: 10px;
-    margin-bottom: 2rem;
+.submit_addressbar {
+  width: 95%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-top: 5px solid red;
+  padding-top: 10px;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  column-gap: 0.1rem;
+  .address_bar_a {
+    display: block;
+    width: max-content;
+    line-height: 1.125rem;
+    font-size: 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #888888;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: linear;
+    padding-right: 0.5rem;
+    &:hover {
+      color: red;
+    }
+  }
+  svg {
+    color: #888888;
+    font-size: 1.5rem;
+  }
+  p {
+    width: max-content;
+    line-height: 1.125rem;
+    font-size: 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #888888;
     padding-left: 1rem;
-    padding-right: 1rem;
-    column-gap: 0.1rem;
-    .address_bar_a{
-        display: block;
-        width: max-content;
-        line-height:1.125rem ;
-        font-size: 1rem;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #888888;
-        transition-duration: 300ms;
-        transition-property: all;
-        transition-timing-function: linear;
-        padding-right:0.5rem ;
-        &:hover{
-            color: red;
-        }
-    }
-    svg{
-        color: #888888;
-        font-size: 1.5rem;
-    }
-    p{
-        width: max-content;
-        line-height:1.125rem ;
-        font-size: 1rem;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-         color: #888888;
-         padding-left:1rem;
-    }
+  }
 }

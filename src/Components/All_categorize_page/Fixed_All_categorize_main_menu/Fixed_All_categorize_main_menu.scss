@@ -1,0 +1,211 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/responsive.scss";
+@import "../../../styles/variables.scss";
+$ziro: 0px;
+.Fixed_All_caategorize_A {
+  width: auto;
+  height: auto;
+  position: fixed;
+  bottom: 30%;
+  right: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  z-index: 55;
+  background-color: white;
+  .Fixed___1 {
+    width: 30px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 8px;
+    &:hover {
+      svg {
+        color: #e64545;
+      }
+      p {
+        color: #e64545;
+      }
+      .abs__Fixed___1 {
+        transition: transform 0.1s linear, opacity 0.6s linear;
+        opacity: 1;
+        transform: scale(1);
+      }
+      .abs__Fixed___1__1 {
+        transition: transform 0.1s linear, opacity 0.6s linear;
+        opacity: 1;
+        transform: scale(1);
+      }
+      .abs__Fixed_google{
+        transition: transform 0.1s linear, opacity 0.6s linear;
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    svg {
+      font-size: 1.5rem;
+      color: #555555;
+      transition: all 0.3s linear;
+    }
+    p {
+      @include responsive($ziro) {
+        display: none;
+      }
+      @include responsive($laptop) {
+        display: block;
+      }
+      font-size: 0.75rem;
+      font-family: roboto-bold;
+      transition: all 0.3s linear;
+    }
+    .abs__Fixed___1 {
+      position: absolute;
+      top: 0;
+      left: -152px;
+      width: 150px;
+      height: 35px;
+      box-shadow: 5px 5px 25px #5b5b5b79;
+      background-color: white;
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.1s linear, opacity 0.6s linear;
+      .rottate_abs {
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        background-color: white;
+        position: absolute;
+        top:60px;
+        right: -5px;
+        border-right:0.25px solid #55555569;
+        border-top:0.25px solid #55555569;
+      }
+      a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.875rem;
+        color: #555555;
+        transition: all 0.3s linear;
+        text-align: center;
+        &:hover {
+          text-decoration: underline;
+          color: #222222;
+        }
+      }
+    }
+    .abs__Fixed___1__1 {
+      position: absolute;
+      top: 0;
+      left: -230px;
+      width: 230px;
+      height: 35px;
+      box-shadow: 5px 5px 25px #5b5b5b79;
+      background-color: white;
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.1s linear, opacity 0.6s linear;
+      a {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.75rem;
+        color: #555555;
+        transition: all 0.3s linear;
+        text-align: center;
+        &:hover {
+          text-decoration: underline;
+          color: #222222;
+        }
+      }
+    }
+    .abs__Fixed_google {
+      position: absolute;
+      top: -50px;
+      left: -243px;
+      width: 243px;
+      height: 150px;
+      padding: 0.5rem;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      border: 0.25px solid #55555569;
+      background-color: white;
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 0.1s linear, opacity 0.6s linear;
+      .rottate_abs {
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        background-color: white;
+        position: absolute;
+        top:60px;
+        right: -5px;
+        border-right:0.25px solid #55555569;
+        border-top:0.25px solid #55555569;
+      }
+      .ab_fixed_1 {
+        width: 100%;
+        font-size: 0.875rem;
+        font-family: roboto-bold;
+        color: #222222;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.313rem;
+      }
+      .ab_fixed_2 {
+        width: 100%;
+        line-height: 1rem;
+        color: #555555;
+        font-size: 0.75rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .abs_img_div {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0.2rem;
+        .link_abs_num1 {
+          width: auto;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .link_abs_num2 {
+          flex: 1;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          .link_link_1 {
+            width: 100%;
+            height: auto;
+            img {
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

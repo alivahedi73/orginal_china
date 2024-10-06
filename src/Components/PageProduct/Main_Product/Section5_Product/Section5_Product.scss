@@ -1,6 +1,5 @@
-@import "../../../styles/mixin.scss";
-@import "../../../styles/responsive.scss";
-$ziro: 0px;
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/responsive.scss";
 .sec5_pr_main {
   width: 100%;
   height: auto;
@@ -35,7 +34,7 @@ $ziro: 0px;
       border-radius: 6px;
       overflow: hidden;
       position: relative;
-      .sec5_pr_hidden_play{
+      .sec5_pr_hidden_play {
         width: 100%;
         height: 100%;
         display: flex;
@@ -49,22 +48,22 @@ $ziro: 0px;
         bottom: 50%;
         transform: translateX(-50%) translateY(50%);
         color: rgba(0, 0, 0, 0.337);
-        svg{
-            font-size: 100px;
+        svg {
+          font-size: 100px;
         }
       }
-      div{
+      div {
         width: 100%;
         height: 100%;
         img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition-duration: 300ms;
-        transition-timing-function: linear;
-        transition-property: all;
-        opacity: 0.8;
-      }
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition-duration: 300ms;
+          transition-timing-function: linear;
+          transition-property: all;
+          opacity: 0.8;
+        }
       }
     }
     .sec5_pr_div_p {

@@ -1,19 +1,8 @@
-import { useEffect, useState } from "react";
+
 import "./FlexboxSlider_one_page.scss";
-const FlexBoxSlider = () => {
-  let [flex, setFlex] = useState([]);
-  let fetchFlexBox = async () => {
-    try {
-      let data = await fetch("http://localhost:8000/FlexBoxSlider");
-      let res = await data.json();
-      setFlex(res);
-    } catch (error) {
-      console.log(error.message);
-    }
-  };
-  useEffect(() => {
-    fetchFlexBox();
-  }, []);
+import {FlexBoxSlider} from "../data_Page_first_categorize"
+const FlexboxSlider_one_page = () => {
+  let flex = FlexBoxSlider;
   return (
     <>
       <div className="sl_2">
@@ -42,4 +31,4 @@ const FlexBoxSlider = () => {
   );
 };
 
-export default FlexBoxSlider;
+export default FlexboxSlider_one_page;
